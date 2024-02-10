@@ -5,4 +5,5 @@
 ![Carlos](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/CARLOS2.0.png?raw=true)
 ![Tim](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/TIM2.0.png?raw=true)
 ![Hannah](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/HANNAH2.0.png?raw=true)
-![Map1] (https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/Map%201.png?raw=true)
+![Map1](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/Map%201.png?raw=true)
+
