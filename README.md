@@ -18,4 +18,4 @@
 ![Beach](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/Beach.jpg?raw=true)
 ![MR](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/MR.jpg?raw=true)
 ![RezRelocate](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/RezRelocate.png?raw=true)
-
+![ComRelocate](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/ComRelocate.png?raw=true)
