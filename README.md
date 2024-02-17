@@ -20,3 +20,4 @@
 ![RezRelocate](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/RezRelocate.png?raw=true)
 ![ComRelocate](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/ComRelocate.png?raw=true)
 ![HighSW](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/HighSW.png?raw=true)
+![BothRelocate](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/BothRelocate.png?raw=true)
