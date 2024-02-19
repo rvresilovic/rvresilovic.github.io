@@ -29,5 +29,10 @@
 ![B.TIM](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/TIM3.0.png?raw=true)
 ![B.HANNAH](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/HANNAH3.0.png?raw=true)
 ![A.CORA](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/CORA2.0A.jpg?raw=true)
+![A.AGATHA](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/AGATHA2.0A.png?raw=true)
+![A.CHAD](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/CHAD2.0A.png?raw=true)
+![A.CARLOS](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/CARLOS2.0A.png?raw=true)
+![A.TIM](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/TIM2.5A.png?raw=true)
+![A.HANNAH](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/HANNAH2.0A.png?raw=true)
 
 
