@@ -28,5 +28,6 @@
 ![B.CARLOS](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/CARLOS3.0.png?raw=true)
 ![B.TIM](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/TIM3.0.png?raw=true)
 ![B.HANNAH](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/HANNAH3.0.png?raw=true)
+![A.CORA](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/CORA2.0A.jpg?raw=true)
 
 
