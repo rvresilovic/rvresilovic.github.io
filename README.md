@@ -34,5 +34,5 @@
 ![A.TIM](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/TIM2.5A.png?raw=true)
 ![A.HANNAH](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/HANNAH2.0A.png?raw=true)
 ![PubCon](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/PublicConsult.jpg?raw=true)
-![IntroPage](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/SettingImageTitle.png?raw=true)
+![IntroPage](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/SettingImageTitle2.png?raw=true)
 
