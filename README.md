@@ -12,7 +12,6 @@
 ![Map5](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/Map%205.png?raw=true)
 ![Map6](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/Map%206.png?raw=true)
 ![Map7](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/Map%207.png?raw=true)_
-![FrontPic](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/Intro%20Pic.png?raw=true)
 ![Seawall](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/SEAWALL.jpg?raw=true)
 ![SaltMarsh](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/SaltMarsh.jpg?raw=true)
 ![Beach](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/Beach.jpg?raw=true)
@@ -35,5 +34,5 @@
 ![A.TIM](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/TIM2.5A.png?raw=true)
 ![A.HANNAH](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/HANNAH2.0A.png?raw=true)
 ![PubCon](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/PublicConsult.jpg?raw=true)
-
+![IntroPage](https://github.com/rvresilovic/rvresilovic.github.io/blob/main/images/SettingImageTitle.png?raw=true)
 
