@@ -1864,7 +1864,7 @@ Or you can
 
 /*Is CORA satisfied?*/
 
-&lt;&lt;if ($ZONE1CONDITION &gt; 0) or ($RETREAT1 == false) or ($ZONE2CONDITION &gt;0)&gt;&gt;
+&lt;&lt;if ($ZONE1CONDITION &gt; 0) or ($RETREAT1 == false)&gt;&gt;
 	&lt;&lt;set $CORA_SATISFACTION = 1&gt;&gt;
 &lt;&lt;else&gt;&gt;
 	&lt;&lt;set $CORA_SATISFACTION = 2&gt;&gt;
@@ -2165,7 +2165,7 @@ Or you can
 
 /*Is CARLOS satisfied?*/
 
-&lt;&lt;if ($ZONE2CONDITION &gt; 0) or ($ZONE3CONDITION &gt; 0) or ($ZONE5CONDITION &gt; 0) or ($RETREAT1 == true)&gt;&gt;
+&lt;&lt;if ($ZONE3CONDITION &gt; 0) or ($ZONE5CONDITION &gt; 0) or ($RETREAT1 == true)&gt;&gt;
 	&lt;&lt;set $CARLOS_SATISFACTION = 1&gt;&gt;
 &lt;&lt;else&gt;&gt;
 	&lt;&lt;set $CARLOS_SATISFACTION = 2&gt;&gt;
@@ -2269,7 +2269,7 @@ Or you can
 
 /*Is TIM satisfied?*/
 
-&lt;&lt;if ($ZONE6CONDITION &gt; 0) or ($ZONE1CONDITION &gt; 0) or ($ZONE3CONDITION &gt; 0) or ($ZONE7CONDITION)&gt;&gt;
+&lt;&lt;if ($ZONE6CONDITION &gt; 0) or ($ZONE3CONDITION &gt; 0) or ($ZONE7CONDITION)&gt;&gt;
 	&lt;&lt;set $TIM_SATISFACTION = 1&gt;&gt;
 &lt;&lt;else&gt;&gt;
 	&lt;&lt;set $TIM_SATISFACTION = 2&gt;&gt;
