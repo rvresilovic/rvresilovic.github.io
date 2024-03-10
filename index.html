@@ -119,6 +119,9 @@ span.inactiveText {
 span.speakingText {
   color: yellow;
 }
+span.descriptionText {
+  color: blue;
+}
 span.h1 {
   font-size: x-large;
   text-align: center;
@@ -739,7 +742,7 @@ Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/
 |Cost|&amp;emsp;|$PUBLICCONSULTCOST k|
 
 Image credit: Ginny Larsen/Ministry for Culture and Heritage &quot;[[Community meeting at St Albans Baptist Church|http://www.quakestories.govt.nz/photos/678/]]&quot; 07 Jun 2014
-</tw-passagedata><tw-passagedata pid="18" name="Consultation" tags="Done-for-now" position="600,625" size="100,100">&lt;&lt;if $YEAR &lt; 2049&gt;&gt;&lt;&lt;set $N = 2&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $N = 1&gt;&gt;&lt;&lt;endif&gt;&gt;You hold a public forum at the local community center to discuss ideas about climate change adaptation. The objective is to give community members the opportunity to bring their concerns to the committee and try to find common ground among different viewpoints. The committee works hard to advertise the forum and bring in a wide range of voices, but turnout is always difficult to predict.
+</tw-passagedata><tw-passagedata pid="18" name="Consultation" tags="Done-for-now" position="600,625" size="100,100">&lt;&lt;if $YEAR &lt; 2049&gt;&gt;&lt;&lt;set $N = 2&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $N = 1&gt;&gt;&lt;&lt;endif&gt;&gt;You hold a public forum at the local community center to discuss ideas about climate change adaptation. The objective is to give community members the opportunity to bring their concerns to the committee and try to find common ground among different viewpoints. The committee works hard to advertise the forum and bring in a wide range of voices, but turnout is always difficult to predict. &#39;&#39;By holding this public meeting the city has gained 60K in state grant money.&#39;&#39;
 
 In attendance:
 &lt;&lt;if random(1,4) &gt; $N&gt;&gt;&lt;&lt;link &quot;Cora the Community Land Trust Activist&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Cora says&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;set $CORA_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cora the Community Land Trust Activist&lt;/span&gt;&lt;&lt;endif&gt;&gt;
@@ -1100,7 +1103,7 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $RETREATTEMP2 to false&gt;&gt;
 &lt;&lt;set $PUBLICCONSULTTEMP to false&gt;&gt;
 &lt;&lt;set $BUDGETTEMP = 0&gt;&gt;
-&lt;&lt;set $EDUWORKSHOPTEMP = 0&gt;&gt;
+
 
 
 &lt;&lt;set $SEAWALLCOST1 = 100&gt;&gt;
@@ -1110,13 +1113,13 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $RETREATCOST1 = 300&gt;&gt;
 &lt;&lt;set $RETREATCOST2 = 300&gt;&gt;
 &lt;&lt;set $PUBLICCONSULTCOST = 50&gt;&gt;
-&lt;&lt;set $EDUWORKSHOPCOST = 50&gt;&gt;
+&lt;&lt;set $PUBLICCONSULTGRANT = 60&gt;&gt;
 	
 				/****WEATHER GENERATION PARAMETERS****/
 /*SEVEREWEATHER = counts annual weather events*/
 /*STORMPROB = annual probability of severe weather event out of 100*/
 &lt;&lt;set $SEVEREWEATHER to 0&gt;&gt;
-&lt;&lt;set $STORMPROB = 33&gt;&gt;
+&lt;&lt;set $STORMPROB = 35&gt;&gt;
 
 				/****SEA LEVEL PARAMETERS****/
 /* Each list correponds to an annual sea level rise projection */ 
@@ -1350,25 +1353,28 @@ $ZONE7CONTENT[$ZONE7CONDITION]
 
 </tw-passagedata><tw-passagedata pid="42" name="Cora" tags="Done" position="1350,75" size="100,100">&lt;span class=&quot;h1&quot;&gt;Cora the Community Land Trust Activist&lt;/span&gt;
 &lt;img src = https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CORA3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
-&lt;&lt;click &quot;Click here to learn more about Cora&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutcora&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutcora&quot; class=&quot;hidden&quot;&gt;Cora is an activist with a community land trust. She helps represent a number of community members who want to help protect and restore the natural ecosystems along the coast of Waterville. Her focus is on restoring the salt marshes along the coast.  She sees the salt marshes slowly disappearing and knows that science supports restoration as a good adaptation strategy for sea level rise and storm surge flooding. She believes that restoring and maintaining the salt marshes is the best way to protect the coastline.  She thinks that hard structures such as seawalls will hurt the natural ecosystem and do more harm to the beach than good by causing erosion and the loss of natural habitats. Cora does not support the use of hard structure adaptation strategies along the coastline and views nature-based solutions as the most valuable option for Waterville  &lt;/div&gt;
 
 Cora says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CORA_LVL == 1&gt;&gt; $CORA_LVL1[$CORA_SCORE]&lt;&lt;elseif $CORA_LVL == 2&gt;&gt;$CORA_LVL2[$CORA_SCORE]&lt;&lt;elseif $CORA_LVL == 3&gt;&gt;$CORA_LVL3[$CORA_SCORE]&lt;&lt;elseif $CORA_LVL == 4&gt;&gt;$CORA_LVL4[$CORA_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
 
 Cora&#39;s contribution to decadal budget is $$$CORA_CONT k
 
+&#39;&#39;Learn more about Cora:&#39;&#39;
+Cora is an activist with a community land trust. She helps represent a number of community members who want to help protect and restore the natural ecosystems along the coast of Waterville. Her focus is on restoring the salt marshes along the coast.  She sees the salt marshes slowly disappearing and knows that science supports restoration as a good adaptation strategy for sea level rise and storm surge flooding. She believes that restoring and maintaining the salt marshes is the best way to protect the coastline.  She thinks that hard structures such as seawalls will hurt the natural ecosystem and do more harm to the beach than good by causing erosion and the loss of natural habitats. Cora does not support the use of hard structure adaptation strategies along the coastline and views nature-based solutions as the most valuable option for Waterville. 
+
 [[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="43" name="Agatha" tags="Done" position="1375,200" size="100,100">&lt;span class=&quot;h1&quot;&gt;Agatha the Resident&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/AGATHA3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
-&lt;&lt;click &quot;Click here to learn more about Agatha&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutfern&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutfern&quot; class=&quot;hidden&quot;&gt;Agatha is a concerned resident who lives on the coast of Waterville. For years she has watched the small sea wall in front of her property degrade and crumble.  She has also already experienced flooding from more frequent extreme storms, as the small seawall has been overtopped.  Agatha wants to be able to continue to enjoy and live on her property that has been passed down through generations, and wants the existing seawall repaired, and plans for a larger sea wall to be built. Agatha does not want the new seawall to be too tall and block her view of the ocean. She does not currently consider managed retreat as an option, and refuses to imagine a moment when she would be forced to leave her home.&lt;/div&gt;
 
 Agatha says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $AGATHA_LVL == 1&gt;&gt;$AGATHA_LVL1[$AGATHA_SCORE]&lt;&lt;elseif $AGATHA_LVL == 2&gt;&gt;$AGATHA_LVL2[$AGATHA_SCORE]&lt;&lt;elseif $AGATHA_LVL == 3&gt;&gt;$AGATHA_LVL3[$AGATHA_SCORE]&lt;&lt;elseif $AGATHA_LVL == 4&gt;&gt;$AGATHA_LVL4[$AGATHA_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
 
 Agatha&#39;s contribution to decadal budget is $$$AGATHA_CONT k
 
+&#39;&#39;Learn more about Agatha:&#39;&#39;
+Agatha is a concerned resident who lives on the coast of Waterville. For years she has watched the small sea wall in front of her property degrade and crumble.  She has also already experienced flooding from more frequent extreme storms, as the small seawall has been overtopped.  Agatha wants to be able to continue to enjoy and live on her property that has been passed down through generations, and wants the existing seawall repaired, and plans for a larger sea wall to be built. Her main goal is to be able to keep her home for her children and her grandchildren as somethign to pass on. Agatha does not want the new seawall to be too tall and block her view of the ocean. She does not currently consider managed retreat as an option, and refuses to imagine a moment when she would be forced to leave her home.
+
 [[Back to status page|Turn]]
 
 </tw-passagedata><tw-passagedata pid="44" name="Chad" tags="Done" position="1375,325" size="100,100">&lt;span class=&quot;h1&quot;&gt;Chad the Developer&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CHAD3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
-&lt;&lt;click &quot;Click here to learn more about Chad&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutchad&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutchad&quot; class=&quot;hidden&quot;&gt;Chad is a property developer who owns property in Waterville and is also actively looking for new property to develop into housing on the coast. Chad understands the need to consider climate change threats in new development, and plans to follow existing Waterville guidelines to elevate any new development to the  high tide line. At this moment, Chad does not see the reason to stop development along the coast, and is not in favor of retreat or allowing space for the restoration of the salt marshes. The salt marsh restoration would mean that there would be less “prime” developable land on the coast for especially housing. Chad is willing to help pay for seawall protection for parts of the coast but does not want to be the only one contributing to these types of hard structure adaptation strategies.&lt;/div&gt;
 
 Chad says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CHAD_LVL == 1&gt;&gt;$CHAD_LVL1[$CHAD_SCORE]&lt;&lt;elseif $CHAD_LVL == 
 2&gt;&gt;$CHAD_LVL2[$CHAD_SCORE]&lt;&lt;elseif $CHAD_LVL == 
@@ -1376,6 +1382,9 @@ Chad says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CHAD_LVL == 1&
 4&gt;&gt;$CHAD_LVL4[$CHAD_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
 
 Chad&#39;s contribution to decadal budget is $$$CHAD_CONT k
+
+&#39;&#39;Learn more about Chad:&#39;&#39;
+Chad is a property developer who owns property in Waterville and is also actively looking for new property to develop into housing on the coast. Chad understands the need to consider climate change threats in new development, and plans to follow existing Waterville guidelines to elevate any new development to the  high tide line. At this moment, Chad does not see the reason to stop development along the coast, and is not in favor of retreat or allowing space for the restoration of the salt marshes. The salt marsh restoration would mean that there would be less “prime” developable land on the coast for especially housing. Chad is willing to help pay for seawall protection for parts of the coast but does not want to be the only one contributing to these types of hard structure adaptation strategies.
 
 [[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="45" name="Precheck" tags="Done-for-now" position="625,450" size="100,100">/*This &#39;pre-check&#39; passage determines if the player has enough money to proceed with their selected adaptations, if they have tried to both consult and adapt at the same time, or if they have not consulted before attempting to relocate. If they meet the criteria, then they proceed directly to the &#39;check conditions&#39; passage. If not, then they are informed and asked to return to the &#39;decisions&#39; passage.)*/
 
@@ -1521,9 +1530,9 @@ Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/PublicConsult.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Hold public meetings/educational workshops with stakeholders and community members.|
 |&amp;emsp;| | |
-|&#39;&#39;Details&#39;&#39;|&amp;emsp;|This option allows you to share information about likely local climate change effects and adaptation options and to get input from community members on these potential options. This also provides the opportunity for the committee to provide educational presentations and workshops to help bolster community understanding of local climate change impacts.|
+|&#39;&#39;Details&#39;&#39;|&amp;emsp;|This option allows you to share information about likely local climate change effects and adaptation options and to get input from community members on these potential options. This also provides the opportunity for the committee to provide educational presentations and workshops to help bolster community understanding of local climate change impacts. By consulting with the public, tthe committee is also eligible for a state grant of $60k. This will be added to your budget for the next ten years.|
 |&amp;emsp;| | |
-|&#39;&#39;Advantages&#39;&#39;|&amp;emsp;|This can provide insights into better ways of implementing adaptations and build trust within your community. It can also help community knowledge surrounding climate change and the seriousness of the impacts that are likely to be seen in the future.|
+|&#39;&#39;Advantages&#39;&#39;|&amp;emsp;|This can provide insights into better ways of implementing adaptations and build trust within your community. It can also help community knowledge surrounding climate change and the seriousness of the impacts that are likely to be seen in the future. Consulting the public also opens up state and federal grant opportunities.|
 |&amp;emsp;| | |
 |&#39;&#39;Potential Issues&#39;&#39;|&amp;emsp;|Not all community members will choose to attend public meetings. This option draws funds away from the adaptation budget but is required prior to a major long-term decision such as relocation. Can be difficult to get consensus on a decision.|
 |&amp;emsp;| | |
@@ -1697,7 +1706,9 @@ Or you can
 &lt;&lt;if ($SALTMARSHTEMP == true)&gt;&gt;&lt;&lt; set $BUDGET -= $SALTMARSHCOST&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if ($RETREATTEMP1 == true)&gt;&gt; &lt;&lt;set $BUDGET -= $RETREATCOST1 &gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if ($RETREATTEMP2 == true)&gt;&gt;&lt;&lt;set $BUDGET -= $RETREATCOST2 &gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if ($PUBLICCONSULTTEMP == true)&gt;&gt;&lt;&lt;set $BUDGET -= $PUBLICCONSULTCOST &gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if ($PUBLICCONSULTTEMP == true)&gt;&gt;&lt;&lt;set $BUDGET -= $PUBLICCONSULTCOST and += $PUBLICCONSULTGRANT&gt;&gt;
+
+&lt;&lt;endif&gt;&gt;
 &lt;&lt;set $BUDGETTEMP = 0&gt;&gt;
 
 &lt;&lt;if $SEAWALLTEMP1 == true&gt;&gt;&lt;&lt;set $SEAWALL1 to true&gt;&gt;&lt;&lt;endif&gt;&gt;
@@ -2476,13 +2487,17 @@ Or you can
 &lt;&lt;endif&gt;&gt;
 
 
-&lt;&lt;set $TURN += 1&gt;&gt;&lt;&lt;set $STORMPROB += 3&gt;&gt;&lt;&lt;set $SCORE = ($CORA_SCORE + $AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;&lt;&lt;if $TURN &gt; 1&gt;&gt;&lt;&lt;set $BUDGET += ($CORA_CONT + $AGATHA_CONT + $CHAD_CONT + $CARLOS_CONT + $TIM_CONT + $HANNAH_CONT)&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;goto Turn&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="Carlos" tags="Done" position="1375,450" size="100,100">&lt;span class=&quot;h1&quot;&gt;Carlos the Local Restaurant Owner&lt;/span&gt;
+&lt;&lt;set $TURN += 1&gt;&gt;&lt;&lt;set $STORMPROB += 3&gt;&gt;&lt;&lt;set $SCORE = ($CORA_SCORE + $AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;&lt;&lt;if $TURN &gt; 1&gt;&gt;&lt;&lt;set $BUDGET += ($CORA_CONT + $AGATHA_CONT + $CHAD_CONT + $CARLOS_CONT + $TIM_CONT + $HANNAH_CONT)&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;goto Turn&gt;&gt;
+
+</tw-passagedata><tw-passagedata pid="60" name="Carlos" tags="Done" position="1375,450" size="100,100">&lt;span class=&quot;h1&quot;&gt;Carlos the Local Restaurant Owner&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CARLOS3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
-&lt;&lt;click &quot;Click here to learn more about Carlos&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutcarlos&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutcarlos&quot; class=&quot;hidden&quot;&gt;Carlos has owned a local business in Waterville for fifteen years. An immigrant, Carlos moved to the city as a young adult and worked his way upwards and now has his own business.   He does not view climate change, sea level rise and more extreme weather as an urgent concern for his business, and is more focused on the financial stability of his business.  His business is located near the main road, and access can be impacted when flooding occurs. However, he does not urgently see the need for drastic measures, and believes that what is best for his business is to maintain the coastline and ensure visitors and customers at the restaurant.&lt;/div&gt;
 
 Carlos says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CARLOS_LVL == 1&gt;&gt;$CARLOS_LVL1[$CARLOS_SCORE]&lt;&lt;elseif $CARLOS_LVL == 2&gt;&gt;$CARLOS_LVL2[$CARLOS_SCORE]&lt;&lt;elseif $CARLOS_LVL == 3&gt;&gt;$CARLOS_LVL3[$CARLOS_SCORE]&lt;&lt;elseif $CARLOS_LVL == 4&gt;&gt;$CARLOS_LVL4[$CARLOS_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
 
 Carlos&#39;s contribution to decadal budget is $$$CARLOS_CONT k
+
+&#39;&#39;Learn more about Carlos:&#39;&#39;
+Carlos has owned a local business in Waterville for fifteen years. An immigrant, Carlos moved to the city as a young adult and worked his way upwards and now has his own business.   He does not view climate change, sea level rise and more extreme weather as an urgent concern for his business, and is more focused on the financial stability of his business.  His business is located near the main road, and access can be impacted when flooding occurs. However, he does not urgently see the need for drastic measures, and believes that what is best for his business is to maintain the coastline and ensure visitors and customers at the restaurant.
 
 [[Back to status page|Turn]]
 
@@ -2506,7 +2521,6 @@ Deliver score-based content
 &lt;&lt;set $CONSULT.CARLOS to $CARLOSWANTS&gt;&gt;
 </tw-passagedata><tw-passagedata pid="61" name="Tim" tags="Done" position="1375,575" size="100,100">&lt;span class=&quot;h1&quot;&gt;Tim the Coastal Adaptation Engineer&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/TIM3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
-&lt;&lt;click &quot;Click here to learn more about Tim&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#abouttim&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;abouttim&quot; class=&quot;hidden&quot;&gt;Tim is a coastal adaptation engineer who lives and works in Waterville. Through his job and expertise he has a unique perspective on what can be done to help Waterville. He also sees seawalls as a necessary adaptation strategy and thinks that maintaining and restoring existing seawalls is an important step for protecting the coast. The technology is there and Tim wants to use it as quickly as possible. He is not against salt marsh restoration either, however believes that hard structures will be the best engineering option to protect Waterville.  At the moment, he does not see the need for managed retreat, however, if it becomes clear that current adaptation strategies are enough to protect against sea level rise and flooding, Tim would consider managed retreat a necessary option for Waterville to consider.&lt;/div&gt;
 
 Tim says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $TIM_LVL == 1&gt;&gt;$TIM_LVL1[$TIM_SCORE]&lt;&lt;elseif $TIM_LVL == 
 2&gt;&gt;$TIM_LVL2[$TIM_SCORE]&lt;&lt;elseif $TIM_LVL == 
@@ -2514,6 +2528,9 @@ Tim says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $TIM_LVL == 1&gt
 4&gt;&gt;$TIM_LVL4[$TIM_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
 
 Tim&#39;s contribution to decadal budget is $$$TIM_CONT k
+
+&#39;&#39;Learn more about Tim:&#39;&#39;
+Tim is a coastal adaptation engineer who lives and works in Waterville. Through his job and expertise he has a unique perspective on what can be done to help Waterville. He also sees seawalls as a necessary adaptation strategy and thinks that maintaining and restoring existing seawalls is an important step for protecting the coast. The technology is there and Tim wants to use it as quickly as possible. He is not against salt marsh restoration either, however believes that hard structures will be the best engineering option to protect Waterville.  At the moment, he does not see the need for managed retreat, however, if it becomes clear that current adaptation strategies are enough to protect against sea level rise and flooding, Tim would consider managed retreat a necessary option for Waterville to consider.
 
 [[Back to status page|Turn]]
 
@@ -2533,12 +2550,13 @@ Deliver score-based content
 
 &lt;&lt;set $CONSULT.TIM to $TIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Hannah" tags="Done" position="1375,700" size="100,100">&lt;span class=&quot;h1&quot;&gt;Hannah the Student Activist&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/HANNAH3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
-&lt;&lt;click &quot;Click here to learn more about Hannah&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#abouthannah&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;abouthannah&quot; class=&quot;hidden&quot;&gt;Hannah is seventeen years old and is in her senior year of high school at Waterville High. She is also a leading member of the Student’s For Climate Action, a youth climate activist organization that is focused on pushing decision makers to take action to both mitigate and adapt to climate change. Hannah is a vocal advocate for managed retreat, believing that the only plausible future-oriented plan is to create a strategy to move away from the coast. This, she argues, is the only sustainable way of creating a resilient city that will be able to be resilient to the climate change impacts that are being seen. She does not support the building of new seawalls, believing that strategy would go against the principle of not rebuilding or building along the coast. Salt marsh restoration is something Hannah believes to be important in climate adaptation, and she thinks that retreating from the coast will give the salt marsh valuable space to migrate inland.
- &lt;/div&gt;
 
-Hannahsays: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $HANNAH_LVL == 1&gt;&gt;$HANNAH_LVL1[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 2&gt;&gt;$HANNAH_LVL2[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 3&gt;&gt;$HANNAH_LVL3[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 4&gt;&gt;$HANNAH_LVL4[$HANNAH_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
+Hannah says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $HANNAH_LVL == 1&gt;&gt;$HANNAH_LVL1[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 2&gt;&gt;$HANNAH_LVL2[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 3&gt;&gt;$HANNAH_LVL3[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 4&gt;&gt;$HANNAH_LVL4[$HANNAH_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
 
 Hannah&#39;s contribution to decadal budget is $$$HANNAH_CONT k
+
+&#39;&#39;Find out more about Hannah:&#39;&#39;
+Hannah is seventeen years old and is in her senior year of high school at Waterville High. She is also a leading member of the Student’s For Climate Action, a youth climate activist organization that is focused on pushing decision makers to take action to both mitigate and adapt to climate change. Hannah is a vocal advocate for managed retreat, believing that the only plausible future-oriented plan is to create a strategy to move away from the coast. This, she argues, is the only sustainable way of creating a resilient city that will be able to be resilient to the climate change impacts that are being seen. She does not support the building of new seawalls, believing that strategy would go against the principle of not rebuilding or building along the coast. Salt marsh restoration is something Hannah believes to be important in climate adaptation, and she thinks that retreating from the coast will give the salt marsh valuable space to migrate inland.
 
 
 [[Back to status page|Turn]]
