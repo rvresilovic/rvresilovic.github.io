@@ -1706,9 +1706,10 @@ Or you can
 &lt;&lt;if ($SALTMARSHTEMP == true)&gt;&gt;&lt;&lt; set $BUDGET -= $SALTMARSHCOST&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if ($RETREATTEMP1 == true)&gt;&gt; &lt;&lt;set $BUDGET -= $RETREATCOST1 &gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if ($RETREATTEMP2 == true)&gt;&gt;&lt;&lt;set $BUDGET -= $RETREATCOST2 &gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if ($PUBLICCONSULTTEMP == true)&gt;&gt;&lt;&lt;set $BUDGET -= $PUBLICCONSULTCOST and += $PUBLICCONSULTGRANT&gt;&gt;
+&lt;&lt;if ($PUBLICCONSULTTEMP == true)&gt;&gt;&lt;&lt;set $BUDGET -= $PUBLICCONSULTCOST and +=$PUBLICCONSULTGRANT&gt;&gt;&lt;&lt;endif&gt;&gt;
 
-&lt;&lt;endif&gt;&gt;
+
+
 &lt;&lt;set $BUDGETTEMP = 0&gt;&gt;
 
 &lt;&lt;if $SEAWALLTEMP1 == true&gt;&gt;&lt;&lt;set $SEAWALL1 to true&gt;&gt;&lt;&lt;endif&gt;&gt;
@@ -1829,14 +1830,14 @@ Or you can
 &lt;&lt;if $RETREAT1 == true&gt;&gt;
 	&lt;&lt;set $ZONE4CONDITION = 4&gt;&gt;
 	&lt;&lt;set $ZONE5CONDITION = 4&gt;&gt;
-	&lt;&lt;set $MAP = 9&gt;&gt;
+	&lt;&lt;set $MAP = 8&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 
 /*RETREAT 2*/
 &lt;&lt;if $RETREAT2 == true&gt;&gt;
 	&lt;&lt;set $ZONE6CONDITION = 4&gt;&gt;
 	&lt;&lt;set $ZONE7CONDITION = 4&gt;&gt;
-	&lt;&lt;set $MAP = 10&gt;&gt;
+	&lt;&lt;set $MAP = 9&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 
 /*RETREAT 3*/
