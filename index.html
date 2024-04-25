@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Wicked Futures" startnode="37" creator="Twine" creator-version="2.8.1" format="SugarCube" format-version="2.36.1" ifid="EAB12B54-CB60-4BB5-8580-5D70BB6E74AB" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* body {
+	<tw-storydata name="Wicked Futures" startnode="36" creator="Twine" creator-version="2.8.1" format="SugarCube" format-version="2.36.1" ifid="a9537a87-de19-4751-bcda-a07901ef1ef6" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* body {
  font-family: Futura,Impact,Helvetica,sans-serif;
  font-size: 125%;
 } */
@@ -546,44 +546,7 @@ The panel at left keeps track of your progress through the game:
 
 [[Click here to start playing|Turn]]
 
-&lt;&lt;set $SCORE=($CORA_SCORE +$AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Turn" tags="Edits Check" position="750,75" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
-  &lt;div id=&quot;left&quot;&gt;&lt;span class=&quot;h1&quot;&gt;Seaview $YEAR&lt;/span&gt;
-&lt;&lt;if $MAP == 0&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_0.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 1&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_1.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 2&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_2.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 3&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_3.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 4&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_4.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 5&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_5.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 6&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_6.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 7&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_7.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 8&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_relocate_a.jpg width=400 height=400&gt;&lt;&lt;elseif $MAP == 9&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_relocate_a.jpg width=400 height=400&gt;&lt;&lt;elseif $MAP == 10&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_seawall_small.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 11&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_seawall_large.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 12&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_relocate_b.jpg width=400 height=400&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $TURN &gt; 1&gt;&gt;
-In the last 10 years you experienced $SEVEREWEATHER years of severe weather.&lt;&lt;endif&gt;&gt;  
-
-$ZONE1CONTENT[$ZONE2CONDITION]
-$ZONE2CONTENT[$ZONE2CONDITION] 
-$ZONE3CONTENT[$ZONE3CONDITION] 
-$ZONE4CONTENT[$ZONE4CONDITION] 
-$ZONE5CONTENT[$ZONE5CONDITION] 
-$ZONE6CONTENT[$ZONE6CONDITION] 
-$ZONE7CONTENT[$ZONE7CONDITION]
-
-&lt;/div&gt;
-&lt;div id=&quot;right&quot;&gt;&lt;&lt;if $SCORE &lt;= 4&gt;&gt;&lt;&lt;goto VotedOut&gt;&gt;&lt;&lt;elseif ($TURN &lt; $STOPTURN) and (($RETREAT1 == false) or ($RETREAT2 == false))&gt;&gt;Community Stakeholders
-&lt;&lt;if $CORA_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/kim_thumbnail.jpg][Cora]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/kim_thumbnail_red.jpg][Cora]]&lt;&lt;endif&gt;&gt; 
-&lt;&lt;if $AGATHA_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/fern_thumbnail.jpg][Agatha]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/fern_thumbnail_red.jpg][Agatha]]&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $CHAD_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/wehi_thumbnail.jpg][Chad]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/wehi_thumbnail_red.jpg][Chad]]&lt;&lt;endif&gt;&gt; 
-&lt;&lt;if $CARLOS_LVL == 3&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail_grey.jpg][Hannah]]&lt;&lt;elseif $CARLOS_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail.jpg][Carlos]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail_red.jpg][Carlos]]&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $TIM_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/riley_thumbnail.jpg][Tim]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/riley_thumbnail_red.jpg][Tim]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $HANNAH_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/dana_thumbnail.jpg][Hannah]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/dana_thumbnail_red.jpg][Hannah]]&lt;&lt;endif&gt;&gt;
-
-[[Make some decisions|Decisions]]&lt;&lt;else&gt;&gt;[[You&#39;ve reached the end of the game.|End]]&lt;&lt;endif&gt;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;&lt;set $SEAWALLTEMP1 to false&gt;&gt;
-&lt;&lt;set $SEAWALLTEMP2 to false&gt;&gt; 
-&lt;&lt;set $SALTMARSHTEMP to false&gt;&gt;
-&lt;&lt;set $RETREATTEMP1 to false&gt;&gt;
-&lt;&lt;set $RETREATTEMP2 to false&gt;&gt;
-&lt;&lt;set $PUBLICCONSULTTEMP to false&gt;&gt;
-&lt;&lt;set $ACTIONLIST to []&gt;&gt;
-
-
-
-</tw-passagedata><tw-passagedata pid="10" name="Cora" tags="Check" position="1350,75" size="100,100">&lt;span class=&quot;h1&quot;&gt;Cora the Community Land Trust Activist&lt;/span&gt;
+&lt;&lt;set $SCORE=($CORA_SCORE +$AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Cora" tags="Check" position="1350,75" size="100,100">&lt;span class=&quot;h1&quot;&gt;Cora the Community Land Trust Activist&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/kim.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Cora&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutemma&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutkim&quot; class=&quot;hidden&quot;&gt;Cora is an activist with a community land trust. She helps represent a number of community members who want to help protect and restore the natural ecosystems along the coast of Waterville. Her focus is on restoring the salt marshes along the coast.  She sees the salt marshes slowly disappearing and knows that science supports restoration as a good adaptation strategy for sea level rise and storm surge flooding. She believes that restoring and maintaining the salt marshes is the best way to protect the coastline.  She thinks that hard structures such as seawalls will hurt the natural ecosystem and do more harm to the beach than good by causing erosion and the loss of natural habitats. Cora does not support the use of hard structure adaptation strategies along the coastline and views nature-based solutions as the most valuable option for Waterville  &lt;/div&gt;
 
@@ -591,7 +554,7 @@ Cora says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CORA_LVL == 1&
 
 Cora&#39;s contribution to decadal budget is $$$CORA_CONT k
 
-[[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="11" name="Agatha" tags="Check" position="1375,200" size="100,100">&lt;span class=&quot;h1&quot;&gt;Agatha the Resident&lt;/span&gt;
+[[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="10" name="Agatha" tags="Check" position="1375,200" size="100,100">&lt;span class=&quot;h1&quot;&gt;Agatha the Resident&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/fern.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Agatha&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutfern&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutfern&quot; class=&quot;hidden&quot;&gt;Agatha is a concerned resident who lives on the coast of Waterville. For years she has watched the small sea wall in front of her property degrade and crumble.  She has also already experienced flooding from more frequent extreme storms, as the small seawall has been overtopped.  Agatha wants to be able to continue to enjoy and live on her property that has been passed down through generations, and wants the existing seawall repaired, and plans for a larger sea wall to be built. Agatha does not want the new seawall to be too tall and block her view of the ocean. She does not currently consider managed retreat as an option, and refuses to imagine a moment when she would be forced to leave her home.&lt;/div&gt;
 
@@ -601,7 +564,7 @@ Agatha&#39;s contribution to decadal budget is $$$AGATHA_CONT k
 
 [[Back to status page|Turn]]
 
-</tw-passagedata><tw-passagedata pid="12" name="Chad" tags="Check" position="1375,325" size="100,100">&lt;span class=&quot;h1&quot;&gt;Chad the Developer&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Chad" tags="Check" position="1375,325" size="100,100">&lt;span class=&quot;h1&quot;&gt;Chad the Developer&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/wehi.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Chad&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutchad&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutchad&quot; class=&quot;hidden&quot;&gt;Chad is a property developer who owns property in Waterville and is also actively looking for new property to develop into housing on the coast. Chad understands the need to consider climate change threats in new development, and plans to follow existing Waterville guidelines to elevate any new development to the  high tide line. At this moment, Chad does not see the reason to stop development along the coast, and is not in favor of retreat or allowing space for the restoration of the salt marshes. The salt marsh restoration would mean that there would be less “prime” developable land on the coast for especially housing. Chad is willing to help pay for seawall protection for parts of the coast but does not want to be the only one contributing to these types of hard structure adaptation strategies.&lt;/div&gt;
 
@@ -612,7 +575,7 @@ Chad says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CHAD_LVL == 1&
 
 Wehi&#39;s contribution to decadal budget is $$$CHAD_CONT k
 
-[[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="13" name="Repair/Maintain Seawalls" tags="Check" position="1025,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Repair and Maintenance&lt;/span&gt;
+[[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="12" name="Repair/Maintain Seawalls" tags="Check" position="1025,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Repair and Maintenance&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/seawall1.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Sea wall |
 |&amp;emsp;| | |
@@ -649,7 +612,7 @@ Wehi&#39;s contribution to decadal budget is $$$CHAD_CONT k
 %/
 
 
-</tw-passagedata><tw-passagedata pid="14" name="Salt Marsh Restoration" tags="Check" position="1025,475" size="100,100">|&#39;&#39;Description&#39;&#39;|&amp;emsp;|Salt marsh restoration is the restoring of the coastal wetland area that help form the transition zone between the land and the ocean. 
+</tw-passagedata><tw-passagedata pid="13" name="Salt Marsh Restoration" tags="Check" position="1025,475" size="100,100">|&#39;&#39;Description&#39;&#39;|&amp;emsp;|Salt marsh restoration is the restoring of the coastal wetland area that help form the transition zone between the land and the ocean. 
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;|&amp;emsp;|Salt marshes are ever changing ecosystems that routinely get flooded by seawater due to tidal movements. They are a critical habitat for coastal communities, and animal species.|
 |&amp;emsp;| | |
@@ -677,7 +640,7 @@ Complains about sand blowing through town during storms
 
 Round prior to failure sand dune are showing signs of failure and the beach is higher than the park  storms stating to overtop the beach and damage the park
 */
-</tw-passagedata><tw-passagedata pid="15" name="Build Higher Seawall" tags="Check" position="1025,350" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="14" name="Build Higher Seawall" tags="Check" position="1025,350" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/seawall1.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Sea wall (rock revetment)|
 |&amp;emsp;| | |
@@ -711,7 +674,7 @@ Round prior to failure sand dune are showing signs of failure and the beach is h
 //
 //Need some warning signs of failure – say during the last storm locals //noted the water level was getting very close to the top of the sea //wall.
 %/
-</tw-passagedata><tw-passagedata pid="16" name="Managed Retreat" tags="Check" position="1150,350" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal community&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="15" name="Managed Retreat" tags="Check" position="1150,350" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal community&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/Moving_house.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Relocation of coastal community|
@@ -727,7 +690,7 @@ The City of Waterville has acquired inland and higher land, farther from the coa
 |&amp;emsp;| | |
 |&#39;&#39;Cost&#39;&#39;|&amp;emsp;|$RETREATCOST2 k|
 Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1820344
-</tw-passagedata><tw-passagedata pid="17" name="Consult with the public" tags="Check" position="1150,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about consulting with the public&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="16" name="Consult with the public" tags="Check" position="1150,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about consulting with the public&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/consult.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Hold public meetings/educational workshops with stakeholders and community members.|
 |&amp;emsp;| | |
@@ -742,7 +705,7 @@ Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/
 |Cost|&amp;emsp;|$PUBLICCONSULTCOST k|
 
 Image credit: Ginny Larsen/Ministry for Culture and Heritage &quot;[[Community meeting at St Albans Baptist Church|http://www.quakestories.govt.nz/photos/678/]]&quot; 07 Jun 2014
-</tw-passagedata><tw-passagedata pid="18" name="Consultation" tags="Done-for-now" position="600,625" size="100,100">&lt;&lt;if $YEAR &lt; 2049&gt;&gt;&lt;&lt;set $N = 2&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $N = 1&gt;&gt;&lt;&lt;endif&gt;&gt;You hold a public forum at the local community center to discuss ideas about climate change adaptation. The objective is to give community members the opportunity to bring their concerns to the committee and try to find common ground among different viewpoints. The committee works hard to advertise the forum and bring in a wide range of voices, but turnout is always difficult to predict. &#39;&#39;By holding this public meeting the city has gained 60K in state grant money.&#39;&#39;
+</tw-passagedata><tw-passagedata pid="17" name="Consultation" tags="Done-for-now" position="750,275" size="100,100">&lt;&lt;if $YEAR &lt; 2049&gt;&gt;&lt;&lt;set $N = 2&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $N = 1&gt;&gt;&lt;&lt;endif&gt;&gt;You hold a public forum at the local community center to discuss ideas about climate change adaptation. The objective is to give community members the opportunity to bring their concerns to the committee and try to find common ground among different viewpoints. The committee works hard to advertise the forum and bring in a wide range of voices, but turnout is always difficult to predict. &#39;&#39;By holding this public meeting the city has gained 60K in state grant money.&#39;&#39;
 
 In attendance:
 &lt;&lt;if random(1,4) &gt; $N&gt;&gt;&lt;&lt;link &quot;Cora the Community Land Trust Activist&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Cora says&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;set $CORA_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cora the Community Land Trust Activist&lt;/span&gt;&lt;&lt;endif&gt;&gt;
@@ -752,8 +715,16 @@ In attendance:
 &lt;&lt;if random(1,4) &gt; $N&gt;&gt;&lt;&lt;link &quot;Tim the Coastal Adaptation Engineer&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Tim says&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;set $TIM_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Tim the Coastal Adaptation Engineer&lt;/span&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if random(1,4) &gt; $N&gt;&gt;&lt;&lt;link &quot;Hannah the Student Activist&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Hannah says&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;set $HANNAH_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Hannah the Student Activist&lt;/span&gt;&lt;&lt;endif&gt;&gt;
 
-[[Click here to continue|CheckConditions]]
-</tw-passagedata><tw-passagedata pid="19" name="UpdateOutcomes" tags="Edits" position="325,625" size="100,100">/*CHECK ZONES*/
+&lt;&lt;set $PUBLICCONSULTTEMP == true&gt;&gt;
+&lt;&lt;if $PUBLICCONSULTTEMP == true&gt;&gt;&lt;&lt;set $BUDGETTEMP -= $PUBLICCONSULTCOST&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;F&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;set $BUDGET -= $PUBLICCONSULTCOST&gt;&gt;
+
+
+
+
+
+[[Click here to continue|Turn]]
+</tw-passagedata><tw-passagedata pid="18" name="UpdateOutcomes" tags="Edits" position="325,625" size="100,100">/*CHECK ZONES*/
 &lt;&lt;if $SEALEVEL &lt; 0.1&gt;&gt;
 	&lt;&lt;set $ZONE1CONDITION = 1&gt;&gt;
 	&lt;&lt;if $SEVEREWEATHER &gt; 2 and $SEVEREWEATHER &lt; 5&gt;&gt;
@@ -847,7 +818,7 @@ In attendance:
 
 
 
-&lt;&lt;goto UpdateAdaptations&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="Do Nothing" tags="Check" position="1150,475" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Doing Nothing&lt;/span&gt;
+&lt;&lt;goto UpdateAdaptations&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Do Nothing" tags="Check" position="1150,475" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Doing Nothing&lt;/span&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Do nothing (take no adaptation action)|
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;| |This option allows nature to dictate what happens and leaves individuals and businesses to make their own decisions on how to respond to sea level rise and storm events. Doing nothing can be a part of a longer term strategy ……..or not.|
@@ -859,7 +830,7 @@ In attendance:
 |Limits| |The option of doing nothing has no limit|
 |&amp;emsp;| | |
 |Cost| |$0|
-</tw-passagedata><tw-passagedata pid="21" name="Decisions" tags="Edits Check" position="600,300" size="100,100">&lt;span class=&quot;h1&quot;&gt;Decisions&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="20" name="Decisions" tags="Edits Check" position="600,300" size="100,100">&lt;span class=&quot;h1&quot;&gt;Decisions&lt;/span&gt;
 
 Over the &lt;u&gt;next ten years&lt;/u&gt;, which of these strategies (&lt;&lt;link &quot;if any&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Do Nothing&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;) will you employ to address the concerns of the community?
 
@@ -874,7 +845,7 @@ Or you can
 
 
 [[Back to status page|Turn]] or [[see what happens in the next 10 years...|Precheck]]
-</tw-passagedata><tw-passagedata pid="22" name="End" tags="Edits" position="375,375" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+</tw-passagedata><tw-passagedata pid="21" name="End" tags="Edits" position="375,375" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left&quot;&gt;
   &lt;span class=&quot;h1&quot;&gt;Thank you for playing!&lt;/span&gt; 
   Please [[click here take our short post-game survey|https://forms.gle/EnwWDsF7nrDys3GM7]] about your experience or &lt;&lt;click &quot;click here to play again&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.restart()&lt;&lt;/script&gt;&gt;&lt;&lt;/click&gt;&gt;. 
@@ -900,13 +871,13 @@ Or you can
 &amp;emsp;&lt;a href=&quot;http://www.landcareresearch.co.nz&quot;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/landcare%20logo.PNG width=300 height=150&gt;&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="23" name="VotedOut" tags="Done" position="425,200" size="100,100">The residents of Waterville are fed up with the management of the committee. They have voted in a referendum to replace you. [[You&#39;ve reached the end of the game.|End]]
+</tw-passagedata><tw-passagedata pid="22" name="VotedOut" tags="Done" position="425,200" size="100,100">The residents of Waterville are fed up with the management of the committee. They have voted in a referendum to replace you. [[You&#39;ve reached the end of the game.|End]]
 
 &lt;div style=&quot;position:relative;width:267px;height:25px;overflow=hidden;&quot;&gt;
 	&lt;div style=&quot;position:absolute;top:-267px;left:-5px&quot;&gt;
 		&lt;iframe width=&quot;100&quot; height=&quot;100&quot; src=&quot;https://www.youtube.com/embed/yJxCdh1Ps48?autoplay=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 	&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Carlos" tags="Check" position="1375,450" size="100,100">&lt;span class=&quot;h1&quot;&gt;Carlos the Local Restaurant Owner&lt;/span&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Carlos" tags="Check" position="1375,450" size="100,100">&lt;span class=&quot;h1&quot;&gt;Carlos the Local Restaurant Owner&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/taylor.JPG  style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Carlos&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutcarlos&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutcarlos&quot; class=&quot;hidden&quot;&gt;Carlos has owned a local business in Waterville for fifteen years. An immigrant, Carlos moved to the city as a young adult and worked his way upwards and now has his own business.   He does not view climate change, sea level rise and more extreme weather as an urgent concern for his business, and is more focused on the financial stability of his business.  His business is located near the main road, and access can be impacted when flooding occurs. However, he does not urgently see the need for drastic measures, and believes that what is best for his business is to maintain the coastline and ensure visitors and customers at the restaurant.&lt;/div&gt;
 
@@ -934,7 +905,7 @@ Deliver score-based content
 */
 
 &lt;&lt;set $CONSULT.CARLOS to $CARLOSWANTS&gt;&gt;
-</tw-passagedata><tw-passagedata pid="25" name="Tim" tags="Check" position="1375,575" size="100,100">&lt;span class=&quot;h1&quot;&gt;Tim the Coastal Adaptation Engineer&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="24" name="Tim" tags="Check" position="1375,575" size="100,100">&lt;span class=&quot;h1&quot;&gt;Tim the Coastal Adaptation Engineer&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/riley.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Tim&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#abouttim&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;abouttim&quot; class=&quot;hidden&quot;&gt;Tim is a coastal adaptation engineer who lives and works in Waterville. Through his job and expertise he has a unique perspective on what can be done to help Waterville. He also sees seawalls as a necessary adaptation strategy and thinks that maintaining and restoring existing seawalls is an important step for protecting the coast. The technology is there and Tim wants to use it as quickly as possible. He is not against salt marsh restoration either, however believes that hard structures will be the best engineering option to protect Waterville.  At the moment, he does not see the need for managed retreat, however, if it becomes clear that current adaptation strategies are enough to protect against sea level rise and flooding, Tim would consider managed retreat a necessary option for Waterville to consider.&lt;/div&gt;
 
@@ -961,7 +932,7 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.TIM to $TIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Hannah" tags="Check" position="1375,700" size="100,100">&lt;span class=&quot;h1&quot;&gt;Hannah the Student Activist&lt;/span&gt;
+&lt;&lt;set $CONSULT.TIM to $TIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Hannah" tags="Check" position="1375,700" size="100,100">&lt;span class=&quot;h1&quot;&gt;Hannah the Student Activist&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/dana.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Hannah&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#abouthannah&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;abouthannah&quot; class=&quot;hidden&quot;&gt;Hannah is seventeen years old and is in her senior year of high school at Waterville High. She is also a leading member of the Student’s For Climate Action, a youth climate activist organization that is focused on pushing decision makers to take action to both mitigate and adapt to climate change. Hannah is a vocal advocate for managed retreat, believing that the only plausible future-oriented plan is to create a strategy to move away from the coast. This, she argues, is the only sustainable way of creating a resilient city that will be able to be resilient to the climate change impacts that are being seen. She does not support the building of new seawalls, believing that strategy would go against the principle of not rebuilding or building along the coast. Salt marsh restoration is something Hannah believes to be important in climate adaptation, and she thinks that retreating from the coast will give the salt marsh valuable space to migrate inland.
  &lt;/div&gt;
@@ -987,41 +958,41 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.HANNAH to $HANNAHWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Cora says" tags="Edits" position="200,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;&lt;set $CONSULT.HANNAH to $HANNAHWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Cora says" tags="Edits" position="200,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://adaptivefutures.github.io/seriousgames/images/avatars/kim_thumbnail.jpg]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $CORA_LVL == 1&gt;&gt;&quot;Flooding and storm surges are a real problem for this community, but if we invest in some soft solutions, like adding more sand to the beaches, I believe we can continue to thrive here.&quot;&lt;&lt;elseif $CORA_LVL == 2&gt;&gt;&quot;It is the bold who will survive – we need to be bold now and take action to protect the future of our town. To do that we have to relocate some, or possibly all, of our community.&quot;&lt;&lt;else&gt;&gt;A new location might not be right beside the sea, but after years of floods and storms, that’s the good news!&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Agatha says" tags="Edits" position="325,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Agatha says" tags="Edits" position="325,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://adaptivefutures.github.io/seriousgames/images/avatars/fern_thumbnail.jpg]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $AGATHA_LVL == 1&gt;&gt;&quot;I want us all to remember that we were not the first people to be here, and we are not likely to be the last. We need to leave this place as beautiful as we found it – and that means we have to take steps to re-nourish and protect the beaches to the best of our ability.&quot;&lt;&lt;elseif $AGATHA_LVL == 2&gt;&gt;&quot;“I have never wanted to leave the area where I grew up. I wanted to raise my children here, let them swim and play in the same places where I did as a child. But now I am more concerned that they have a future where they CAN grow up, in a welcoming and safe community. And I think that means that we need to give the sea the space that it needs, and relocate.&quot;&lt;&lt;else&gt;&gt;&quot;I’m sad to see so many people leave the area, but I think those of us that have stayed on are even more committed to growing a beautiful new community here the new Seaview.&quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Chad says" tags="Edits" position="450,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Chad says" tags="Edits" position="450,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://adaptivefutures.github.io/seriousgames/images/avatars/wehi_thumbnail.jpg]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $CHAD_LVL == 1&gt;&gt;&quot;I want my mokopuna to eat and swim here just as we have for generations, but this means that people must work with the sea, not fight back against it. Seawalls do not consider the needs of future generations.&quot;&lt;&lt;elseif $CHAD_LVL == 2&gt;&gt;&quot;Our people have always had to adapt. It may be time to do so again – to move some of our community to another location and let the sea have this land.&quot;&lt;&lt;else&gt;&gt;&quot;This has been a challenging time for all of the people of this town and especially for whanau. It is good to know that in difficult circumstances we can come together to navigate these challenges.&quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Carlos says" tags="Edits" position="575,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Carlos says" tags="Edits" position="575,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail.jpg]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $CARLOS_LVL == 1&gt;&gt;&quot;I think this town is so beautiful just as it is – I hope that you all can find ways to keep things as they are, especially the beach and the surf!&quot;&lt;&lt;elseif $CARLOS_LVL == 2&gt;&gt;&quot;I think this town is so beautiful just as it is – I hope that you all can find ways to keep things as they are, especially the beach and the surf!&quot;&lt;&lt;else&gt;&gt;&quot;I think this town is so beautiful just as it is – I hope that you all can find ways to keep things as they are, especially the beach and the surf!&quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Tim says" tags="Edits" position="700,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Tim says" tags="Edits" position="700,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://adaptivefutures.github.io/seriousgames/images/avatars/riley_thumbnail.jpg]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $TIM_LVL == 1&gt;&gt;&quot;There are perfectly good solutions that we can utilise right here – seawalls are a cost-effective way for us to protect our investments and our children and grandchildren from any storms that come our way.&quot;&lt;&lt;elseif $TIM_LVL == 2&gt;&gt;&quot;This is our town and we need to protect it for our children and grandchildren – that may mean that we have to build up and build stronger, but I believe we are up to the challenge.&quot;&lt;&lt;elseif $TIM_LVL == 3&gt;&gt;&quot;This is our town and we need to protect it for our children and grandchildren – that may mean that we have to build up and build stronger, but I believe we are up to the challenge.&quot;&lt;&lt;else&gt;&gt;&quot;My heart is broken – I never would have believed that we would abandon our town in this shameful way. I hope that future generations can rebuild something here that comes close to what we had before. &quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="Hannah says" tags="Edits" position="825,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Hannah says" tags="Edits" position="825,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://adaptivefutures.github.io/seriousgames/images/avatars/dana_thumbnail.jpg]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $HANNAH_LVL == 1&gt;&gt;&quot;Enough talk already! I think we have to get serious about protecting our existing coastal infrastructure using the tools at hand – things like beach nourishment go a long way in other areas of New Zealand!&quot;&lt;&lt;elseif $HANNAH_LVL == 2&gt;&gt;&quot;This town is worth protecting – but that means we need to invest in our future here. We cannot give up on Seaview! There are lots of hard options available that will keep us safe and dry when storms roll in.  &quot;&lt;&lt;elseif $HANNAH_LVL == 3&gt;&gt;&quot;This town is worth protecting – but that means we need to invest in our future here. We cannot give up on Seaview! There are lots of hard options available that will keep us safe and dry when storms roll in.&quot;&lt;&lt;else&gt;&gt;&quot;I am horrified that the “leaders” of this town would just abandon their posts and let the sea take the land and all of our investments with it! This is outrageous!&quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="33" name="StoryCaption" tags="Done" position="25,25" size="100,100">| !Year:|&amp;nbsp;|$YEAR |
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="StoryCaption" tags="Done" position="25,25" size="100,100">| !Year:|&amp;nbsp;|$YEAR |
 | !Sea level:|&amp;nbsp;|+$SEALEVEL m|
 | !Budget:|&amp;nbsp;|$$$BUDGET k|
 | !Approval Rating:|&amp;nbsp;|&lt;&lt;if $SCORE &lt; 3&gt;&gt;&lt;span class=&quot;negativeText&quot;&gt;&lt;&lt;print Math.round(($SCORE/18)*100)&gt;&gt;%&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;&lt;print Math.round(($SCORE/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-</tw-passagedata><tw-passagedata pid="34" name="How it works" tags="Done" position="0,150" size="100,100">This is a serious game designed to introduce players to the local decision making processes for climate change adaptation. The research used to produce the game was conducted for a Master’s Thesis. The game is programmed using Twine platform, which combines visual and in-built coding elements with CSS and Javascript to write non-linear ‘stories’. 
+</tw-passagedata><tw-passagedata pid="33" name="How it works" tags="Done" position="0,150" size="100,100">This is a serious game designed to introduce players to the local decision making processes for climate change adaptation. The research used to produce the game was conducted for a Master’s Thesis. The game is programmed using Twine platform, which combines visual and in-built coding elements with CSS and Javascript to write non-linear ‘stories’. 
 
 The objective of the game is to protect the City of Waterville from the increased threats of climate change. In order to do this, the player will be required to take actions to adapt to sea level rise, storm surges and flooding. Their ability to take action depends on the support from the community. The player must maintain a level of trust with the community members, who experience the effects of climate change differently depending on their own values and location within the coastal space. Therefore, the game requires the player to balance the wishes of the community with the need to mitigate the immediate and long-term effects of climate change.
 
@@ -1032,7 +1003,7 @@ The game is populated  by non-player characters (NPCs), each with a location, ba
 
 &lt;img src=http://b-davies.github.io/games_images/attitutde_matrix.png width=300 height=300&gt;
 
-[[Back to Intro|Intro]]</tw-passagedata><tw-passagedata pid="35" name="Credits" tags="Done" position="250,175" size="100,100">This project was part of a Tufts University Urban and Environmental Policy and Planning Master&#39;s degree thesis.
+[[Back to Intro|Intro]]</tw-passagedata><tw-passagedata pid="34" name="Credits" tags="Done" position="250,175" size="100,100">This project was part of a Tufts University Urban and Environmental Policy and Planning Master&#39;s degree thesis.
 
 
 Game programmed using [[Twine|http://twinery.org]].
@@ -1041,7 +1012,7 @@ Game programmed using [[Twine|http://twinery.org]].
 Character avatars generated by [[Midjourney|https://www.midjourney.com/]]
 
 [[Return to Start|Intro]]
-</tw-passagedata><tw-passagedata pid="36" name="Settings" tags="Done" position="125,275" size="100,100">&lt;&lt;link &quot;Financial settings&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;About the Financials of Adaptation&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+</tw-passagedata><tw-passagedata pid="35" name="Settings" tags="Done" position="125,275" size="100,100">&lt;&lt;link &quot;Financial settings&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;About the Financials of Adaptation&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 
 |Item|Value|
 |Starting Budget|$&lt;&lt;textbox &quot;$BUDGET&quot; 100&gt;&gt;k|
@@ -1061,16 +1032,16 @@ Character avatars generated by [[Midjourney|https://www.midjourney.com/]]
 &lt;label&gt;&lt;&lt;radiobutton &quot;$NZRCP&quot; &quot;4&quot;&gt;&gt;RCP8.5 &lt;/label&gt;
 
 [[OK|Intro]]
-</tw-passagedata><tw-passagedata pid="37" name="Intro" tags="Done" position="225,50" size="100,100">[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/SettingImageTitle2.png][Intro1]]
+</tw-passagedata><tw-passagedata pid="36" name="Intro" tags="Done" position="225,50" size="100,100">[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/SettingImageTitle2.png][Intro1]]
 [[About the game|How it works]]  |  [[Credits|Credits]] |  [[Settings|Settings]] | [[Pre-game survey| https://tufts.qualtrics.com/jfe/form/SV_2tbtDSioWWHpYpM]]
 
 &lt;&lt;if $NZRCP == 1&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP1[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $NZRCP == 2&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP2[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $NZRCP == 3&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP3[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="StoryInit" tags="Edits" position="50,400" size="100,100">				/****GAME MECHANICS PARAMETERS****/
+&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="StoryInit" tags="Edits" position="50,400" size="100,100">				/****GAME MECHANICS PARAMETERS****/
 &lt;&lt;set $TURN = 1&gt;&gt;
 &lt;&lt;set $YEAR = 2023&gt;&gt;
-&lt;&lt;set $BUDGET = 120&gt;&gt;
+&lt;&lt;set $BUDGET = 170&gt;&gt;
 &lt;&lt;set $INCOME = 20&gt;&gt;
 &lt;&lt;set $SCORE = 0&gt;&gt;
 &lt;&lt;set $STOPTURN = 10&gt;&gt;
@@ -1113,7 +1084,8 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $RETREATCOST1 = 300&gt;&gt;
 &lt;&lt;set $RETREATCOST2 = 300&gt;&gt;
 &lt;&lt;set $PUBLICCONSULTCOST = 50&gt;&gt;
-&lt;&lt;set $PUBLICCONSULTGRANT = 60&gt;&gt;
+
+
 	
 				/****WEATHER GENERATION PARAMETERS****/
 /*SEVEREWEATHER = counts annual weather events*/
@@ -1163,6 +1135,7 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &quot;CARLOS&quot;: &quot;Z&quot;,
 &quot;CORA&quot;: &quot;Z&quot;,
 }&gt;&gt;
+&lt;&lt;$CONSULTPROB = 5&gt;&gt;
 
 /*Action values A = Did nothing, B = Salt marsh, C = Sea Wall, D = Relocate, E = Beach Renourish, F = Public*/
 &lt;&lt;set $ACTIONLIST = []&gt;&gt; 
@@ -1194,6 +1167,13 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $CORA_SATISFACTION_HISTORY = []&gt;&gt;
 &lt;&lt;if $CORA_TRUST == 1&gt;&gt;&lt;&lt;set $CORA_SCORE = $CORA_TRUST * $CORA_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $CORA_SCORE = $CORA_TRUST + $CORA_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $CORA_SCORE -= 1&gt;&gt;
 
+&lt;&lt;if $PUBLICCONSULTTEMP == true&gt;&gt;
+	&lt;&lt;if $CORA_CONSULT == true&gt;&gt;
+		&lt;&lt;if (random (1,10) &lt; $CONSULTPROB)&gt;&gt;
+        	&lt;&lt;set $CORA_TRUST == 2&gt;&gt;
+        &lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
 
 
 /**AGATHA THE RESIDENT PARAMETERS**/
@@ -1213,6 +1193,14 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $AGATHA_SATISFACTION_HISTORY = []&gt;&gt;
 &lt;&lt;if $AGATHA_TRUST == 1&gt;&gt;&lt;&lt;set $AGATHA_SCORE = $AGATHA_TRUST * $AGATHA_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $AGATHA_SCORE = $AGATHA_TRUST + $AGATHA_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $AGATHA_SCORE -= 1&gt;&gt;
 
+&lt;&lt;if $PUBLICCONSULTTEMP == true&gt;&gt;
+	&lt;&lt;if $AGATHA_CONSULT == true&gt;&gt;
+		&lt;&lt;if (random (1,10) &lt; $CONSULTPROB)&gt;&gt;
+        	&lt;&lt;set $AGATHA_TRUST == 2&gt;&gt;
+        &lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
+
 /**CHAD THE DEVELOPER**/
 
 &lt;&lt;set $CHAD_TRUST = 1&gt;&gt;
@@ -1229,6 +1217,14 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $CHAD_TRUST_HISTORY = []&gt;&gt;
 &lt;&lt;set $CHAD_SATISFACTION_HISTORY = []&gt;&gt;
 &lt;&lt;if $CHAD_TRUST == 1&gt;&gt;&lt;&lt;set $CHAD_SCORE = $CHAD_TRUST * $CHAD_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $CHAD_SCORE = $CHAD_TRUST + $CHAD_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $CHAD_SCORE -= 1&gt;&gt;
+
+&lt;&lt;if $PUBLICCONSULTTEMP == true&gt;&gt;
+	&lt;&lt;if $CHAD_CONSULT == true&gt;&gt;
+		&lt;&lt;if (random (1,10) &lt; $CONSULTPROB)&gt;&gt;
+        	&lt;&lt;set $CHAD_TRUST == 2&gt;&gt;
+        &lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
 
 
 /**CARLOS THE LOCAL RESTAURANT OWNER**/
@@ -1248,6 +1244,14 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $CARLOS_SATISFACTION_HISTORY = []&gt;&gt;
 &lt;&lt;if $CARLOS_TRUST == 1&gt;&gt;&lt;&lt;set $CARLOS_SCORE = $CARLOS_TRUST * $CARLOS_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $CARLOS_SCORE = $CARLOS_TRUST + $CARLOS_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $CARLOS_SCORE -= 1&gt;&gt;
 
+&lt;&lt;if $PUBLICCONSULTTEMP == true&gt;&gt;
+	&lt;&lt;if $CARLOS_CONSULT == true&gt;&gt;
+		&lt;&lt;if (random (1,10) &lt; $CONSULTPROB)&gt;&gt;
+        	&lt;&lt;set $CARLOS_TRUST == 2&gt;&gt;
+        &lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
+
 
 /**TIM THE COASTAL ADAPTATION ENGINEER**/
 
@@ -1266,6 +1270,13 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $TIM_SATISFACTION_HISTORY = []&gt;&gt;
 &lt;&lt;if $TIM_TRUST == 1&gt;&gt;&lt;&lt;set $TIM_SCORE = $TIM_TRUST * $TIM_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $TIM_SCORE = $TIM_TRUST + $TIM_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $TIM_SCORE -= 1&gt;&gt;
 
+&lt;&lt;if $PUBLICCONSULTTEMP == true&gt;&gt;
+	&lt;&lt;if $TIM_CONSULT == true&gt;&gt;
+		&lt;&lt;if (random (1,10) &lt; $CONSULTPROB)&gt;&gt;
+        	&lt;&lt;set $TIM_TRUST == 2&gt;&gt;
+        &lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
 
 /**HANNAH THE STUDENT ACTIVIST**/
 
@@ -1289,7 +1300,13 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $HANNAH_SATISFACTION_HISTORY = []&gt;&gt;
 &lt;&lt;if $HANNAH_TRUST == 1&gt;&gt;&lt;&lt;set $HANNAH_SCORE = $HANNAH_TRUST * $HANNAH_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $HANNAH_SCORE = $HANNAH_TRUST + $HANNAH_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $HANNAH_SCORE -= 1&gt;&gt;
 
-
+&lt;&lt;if $PUBLICCONSULTTEMP == true&gt;&gt;
+	&lt;&lt;if $HANNAH_CONSULT == true&gt;&gt;
+		&lt;&lt;if (random (1,10) &lt; $CONSULTPROB)&gt;&gt;
+        	&lt;&lt;set $HANNAH_TRUST == 2&gt;&gt;
+        &lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;
 
 
 &lt;&lt;set $SCORE = &quot;NA&quot;&gt;&gt;
@@ -1298,18 +1315,18 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 
 
 
-x`x``</tw-passagedata><tw-passagedata pid="39" name="Intro1" tags="Done" position="375,25" size="100,100">Welcome to the game! In this game, you are a member of a committee charged with making decisions about a coastal New England city called “Waterville.” Flooding, erosion and sea level rise threaten the city’s waterfront, and climate change projections suggest this threat will continue to move inland for the foreseeable future. Your job, as a city planner and member of the committee, is to honor and respect the values of the Waterville community while making changes to ensure the longevity and prosperity of the town. 
+x`x``</tw-passagedata><tw-passagedata pid="38" name="Intro1" tags="Done" position="375,25" size="100,100">Welcome to the game! In this game, you are a member of a committee charged with making decisions about a coastal New England city called “Waterville.” Flooding, erosion and sea level rise threaten the city’s waterfront, and climate change projections suggest this threat will continue to move inland for the foreseeable future. Your job, as a city planner and member of the committee, is to honor and respect the values of the Waterville community while making changes to ensure the longevity and prosperity of the town. 
 
 The committee represents the voice of the Waterville community at large and has the ability to make decisions on coastal management, development, and coastal protection. Decisions are made on a ten-year basis. You will be put in charge of a budget and a range of possible coastal management options will be presented for consideration.
 
 [[Click to continue|Intro2]]
 
-&lt;&lt;set $SCORE=($CORA_SCORE +$AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Intro2" tags="Done" position="550,25" size="100,100">!Playing the Game
+&lt;&lt;set $SCORE=($CORA_SCORE +$AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Intro2" tags="Done" position="550,25" size="100,100">!Playing the Game
 
 The objective of the game is to protect the City of Waterville from the adverse effects of climate change while honoring the wishes of the community. Your ability to continue making decisions depends on support from the community, as well as funds to address their concerns. 
 
 The panel at left keeps track of your progress through the game:
-*&#39;&#39;Year&#39;&#39; is the current year in the game. The game advances in increments of ten years, and each turn you can make decisions that will affect the Waterville community 
+*&#39;&#39;Year&#39;&#39; is the current year in the game. The game advances in increments of five years, and each turn you can make decisions that will affect the Waterville community 
 *&#39;&#39;Sea level&#39;&#39; is the sea level at this point in the game relative to the 2020 sea level
 *&#39;&#39;Budget&#39;&#39; is your current budget which can be spent on adaptations and other items to improve the lives of the Waterville community. After each turn you’ll accrue additional funds as long as the community has the capacity to support you.
 *&#39;&#39;Approval rating&#39;&#39; is  your score, measured in terms of the attitudes of the community. The more satisfied community members are, and the more trust they have in you as a decision-maker, the higher your approval rating will be. If your rating gets too low, the residents may organize and remove you from office.
@@ -1320,10 +1337,10 @@ The panel at left keeps track of your progress through the game:
 
 [[Click here to start playing|Turn]]
 
-&lt;&lt;set $SCORE=($CORA_SCORE +$AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Turn" tags="Done" position="750,75" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;&lt;set $SCORE=($CORA_SCORE +$AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="Turn" tags="Done" position="775,75" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left&quot;&gt;&lt;span class=&quot;h1&quot;&gt;Waterville $YEAR&lt;/span&gt;
 &lt;&lt;if $MAP == 0&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Map%201.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 1&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Map%202.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 2&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Map%203.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 3&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Map%204.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 4&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Map%205.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 5&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/ExtraMAP.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 6&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Map%206.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 7&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Map%207.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 8&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/ComRelocate.png width=400 height=400&gt;&lt;&lt;elseif $MAP == 9&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/RezRelocate.png width=400 height=400&gt;&lt;&lt;elseif $MAP == 10&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Map%201.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 11&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/HighSW.png width=450 height=300&gt;&lt;&lt;elseif $MAP == 12&gt;&gt;&lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/BothRelocate.png width=400 height=400&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $TURN &gt; 1&gt;&gt;
-In the last 10 years you experienced $SEVEREWEATHER years of severe weather.&lt;&lt;endif&gt;&gt;  
+In the last 5 years you experienced $SEVEREWEATHER years of severe weather.&lt;&lt;endif&gt;&gt;  
 
 $ZONE1CONTENT[$ZONE1CONDITION]
 $ZONE2CONTENT[$ZONE2CONDITION]
@@ -1338,6 +1355,11 @@ $ZONE7CONTENT[$ZONE7CONDITION]
 &lt;&lt;if $CORA_SCORE &gt; 0&gt;&gt;[img[https://rvresilovic.files.wordpress.com/2024/02/cora2.0.png?w=139][Cora]]&lt;&lt;else&gt;&gt;[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CORA2.0A.jpg][Cora]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $AGATHA_SCORE &gt; 0&gt;&gt;[img[https://rvresilovic.files.wordpress.com/2024/02/agatha2.0.png?w=149][Agatha]]&lt;&lt;else&gt;&gt;[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/AGATHA2.0A.png][Agatha]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $CHAD_SCORE &gt; 0&gt;&gt;[img[https://rvresilovic.files.wordpress.com/2024/02/chad2.0.png?w=137][Chad]]&lt;&lt;else&gt;&gt;[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CHAD2.0A.png][Chad]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $CARLOS_LVL == 3&gt;&gt;[img[https://rvresilovic.files.wordpress.com/2024/02/carlos2.0.png?w=137][Carlos]]&lt;&lt;elseif $CARLOS_SCORE &gt; 0&gt;&gt;[img[https://rvresilovic.files.wordpress.com/2024/02/carlos2.0.png?w=137][Carlos]]&lt;&lt;else&gt;&gt;[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CARLOS2.0A.png][Carlos]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $TIM_SCORE &gt; 0&gt;&gt;[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/TIM2.5png.png][Tim]]&lt;&lt;else&gt;&gt;[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/TIM2.5A.png][Tim]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $HANNAH_SCORE &gt; 0&gt;&gt;[img[https://rvresilovic.files.wordpress.com/2024/02/hannah2.0.png?w=149][Hannah]]&lt;&lt;else&gt;&gt;[img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/HANNAH2.0A.png][Hannah]]&lt;&lt;endif&gt;&gt;
+
+You can choose to &lt;&lt;if $BUDGET &gt;= $PUBLICCONSULTCOST&gt;&gt;
+&lt;&lt;link &quot;consult with the public&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Consult with the public&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;elseif $BUDGET &lt; $PUBLICCONSULTCOST&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cannot afford to &lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;consult with the public&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Consult with the public&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; for $$$PUBLICCONSULTCOST k&lt;/span&gt;&lt;&lt;endif&gt;&gt; before making a decision. This costs &#39;&#39;$50k&#39;&#39; and will be subtracted from your budget before you move forward to make a decision.
+
+&#39;&#39;[[Consult with the Public|Consultation]]&#39;&#39;
 
 [[Make some decisions|Decisions]]&lt;&lt;else&gt;&gt;[[You&#39;ve reached the end of the game.|End]]&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
@@ -1355,7 +1377,7 @@ $ZONE7CONTENT[$ZONE7CONDITION]
 &lt;&lt;set $ACTIONLIST to []&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="42" name="Cora" tags="Done" position="1350,75" size="100,100">&lt;span class=&quot;h1&quot;&gt;Cora the Community Land Trust Activist&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="41" name="Cora" tags="Done" position="1350,75" size="100,100">&lt;span class=&quot;h1&quot;&gt;Cora the Community Land Trust Activist&lt;/span&gt;
 &lt;img src = https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CORA3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
 
 Cora says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CORA_LVL == 1&gt;&gt; $CORA_LVL1[$CORA_SCORE]&lt;&lt;elseif $CORA_LVL == 2&gt;&gt;$CORA_LVL2[$CORA_SCORE]&lt;&lt;elseif $CORA_LVL == 3&gt;&gt;$CORA_LVL3[$CORA_SCORE]&lt;&lt;elseif $CORA_LVL == 4&gt;&gt;$CORA_LVL4[$CORA_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -1365,7 +1387,7 @@ Cora&#39;s contribution to decadal budget is $$$CORA_CONT k
 &#39;&#39;Learn more about Cora:&#39;&#39;
 Cora is an activist with a community land trust. She helps represent a number of community members who want to help protect and restore the natural ecosystems along the coast of Waterville. Her focus is on restoring the salt marshes along the coast.  She sees the salt marshes slowly disappearing and knows that science supports restoration as a good adaptation strategy for sea level rise and storm surge flooding. She believes that restoring and maintaining the salt marshes is the best way to protect the coastline.  She thinks that hard structures such as seawalls will hurt the natural ecosystem and do more harm to the beach than good by causing erosion and the loss of natural habitats. Cora does not support the use of hard structure adaptation strategies along the coastline and views nature-based solutions as the most valuable option for Waterville. 
 
-[[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="43" name="Agatha" tags="Done" position="1375,200" size="100,100">&lt;span class=&quot;h1&quot;&gt;Agatha the Resident&lt;/span&gt;
+[[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="42" name="Agatha" tags="Done" position="1375,200" size="100,100">&lt;span class=&quot;h1&quot;&gt;Agatha the Resident&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/AGATHA3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
 
 Agatha says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $AGATHA_LVL == 1&gt;&gt;$AGATHA_LVL1[$AGATHA_SCORE]&lt;&lt;elseif $AGATHA_LVL == 2&gt;&gt;$AGATHA_LVL2[$AGATHA_SCORE]&lt;&lt;elseif $AGATHA_LVL == 3&gt;&gt;$AGATHA_LVL3[$AGATHA_SCORE]&lt;&lt;elseif $AGATHA_LVL == 4&gt;&gt;$AGATHA_LVL4[$AGATHA_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -1377,7 +1399,7 @@ Agatha is a concerned resident who lives on the coast of Waterville. For years s
 
 [[Back to status page|Turn]]
 
-</tw-passagedata><tw-passagedata pid="44" name="Chad" tags="Done" position="1375,325" size="100,100">&lt;span class=&quot;h1&quot;&gt;Chad the Developer&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="43" name="Chad" tags="Done" position="1375,325" size="100,100">&lt;span class=&quot;h1&quot;&gt;Chad the Developer&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CHAD3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
 
 Chad says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CHAD_LVL == 1&gt;&gt;$CHAD_LVL1[$CHAD_SCORE]&lt;&lt;elseif $CHAD_LVL == 
@@ -1390,7 +1412,7 @@ Chad&#39;s contribution to decadal budget is $$$CHAD_CONT k
 &#39;&#39;Learn more about Chad:&#39;&#39;
 Chad is a property developer who owns property in Waterville and is also actively looking for new property to develop into housing on the coast. Chad understands the need to consider climate change threats in new development, and plans to follow existing Waterville guidelines to elevate any new development to the  high tide line. At this moment, Chad does not see the reason to stop development along the coast, and is not in favor of retreat or allowing space for the restoration of the salt marshes. The salt marsh restoration would mean that there would be less “prime” developable land on the coast for especially housing. Chad is willing to help pay for seawall protection for parts of the coast but does not want to be the only one contributing to these types of hard structure adaptation strategies.
 
-[[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="45" name="Precheck" tags="Done-for-now" position="625,450" size="100,100">/*This &#39;pre-check&#39; passage determines if the player has enough money to proceed with their selected adaptations, if they have tried to both consult and adapt at the same time, or if they have not consulted before attempting to relocate. If they meet the criteria, then they proceed directly to the &#39;check conditions&#39; passage. If not, then they are informed and asked to return to the &#39;decisions&#39; passage.)*/
+[[Back to status page|Turn]]</tw-passagedata><tw-passagedata pid="44" name="Precheck" tags="Done-for-now" position="625,450" size="100,100">/*This &#39;pre-check&#39; passage determines if the player has enough money to proceed with their selected adaptations, if they have tried to both consult and adapt at the same time, or if they have not consulted before attempting to relocate. If they meet the criteria, then they proceed directly to the &#39;check conditions&#39; passage. If not, then they are informed and asked to return to the &#39;decisions&#39; passage.)*/
 
 &lt;&lt;if $SEAWALLTEMP1 == true&gt;&gt;&lt;&lt;set $BUDGETTEMP += $SEAWALLCOST1&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;C&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $SEAWALLTEMP2 == true&gt;&gt;&lt;&lt;set $BUDGETTEMP += $SEAWALLCOST2&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;C&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
@@ -1398,11 +1420,10 @@ Chad is a property developer who owns property in Waterville and is also activel
 &lt;&lt;if $SALTMARSHTEMP == true&gt;&gt;&lt;&lt;set $BUDGETTEMP += $SALTMARSHCOST&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;B&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $RETREATTEMP1 == true&gt;&gt;&lt;&lt;set $BUDGETTEMP += $RETREATCOST1&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;D&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $RETREATTEMP2 == true&gt;&gt;&lt;&lt;set $BUDGETTEMP += $RETREATCOST2&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;E&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $PUBLICCONSULTTEMP == true&gt;&gt;&lt;&lt;set $BUDGETTEMP += $PUBLICCONSULTCOST&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;F&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 &lt;&lt;if ($SEAWALLTEMP1 == false) and ($SEAWALLTEMP2 == false) and ($BEACHNOURISHTEMP == false) and ($SALTMARSHTEMP == false) and ($RETREATTEMP1 == false) and ($RETREATTEMP2 == false)&gt;&gt; and ($PUBLICCONSULTTEMP == false) &lt;&lt;set $ACTIONLIST.push(&quot;A&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
 
-&lt;&lt;if $BUDGETTEMP &gt; $BUDGET&gt;&gt;Your budget is currently $BUDGET, but your expenditures for this round are $ $BUDGETTEMP. Please revise your [[decisions|Reset]] to stay within budget.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == true or $SEAWALLTEMP2 == true or $BEACHNOURISHTEMP == true or $SALTMARSHTEMP == true or $RETREATTEMP1 == true or $RETREATTEMP2 == true)&gt;&gt;Undertaking these projects takes time, and you don&#39;t have enough for both public consultation and constructing adaptation measures in the same turn. Please revise your [[decisions|Reset]] to choose either consultation or adaptations.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == false or $SEAWALLTEMP2 == false or $BEACHNOURISHTEMP == false or $SALTMARSHTEMP == false or $RETREATTEMP1 == false or $RETREATTEMP2 == false)&gt;&gt;&lt;&lt;goto Consultation&gt;&gt;&lt;&lt;elseif $RETREATTEMP1 == true and ($CARLOS_CONSULT == false or $CHAD_CONSULT == false)&gt;&gt;&lt;&lt;goto NoBizMove&gt;&gt;&lt;&lt;elseif $RETREATTEMP2 == true and ($AGATHA_CONSULT == false or $TIM_CONSULT == false or $CORA_CONSULT == false)&gt;&gt;&lt;&lt;goto NoResMove&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;goto CheckConditions&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Reset" tags="Done" position="775,500" size="100,100">&lt;&lt;set $BUDGETTEMP = 0&gt;&gt;
+&lt;&lt;if $BUDGETTEMP &gt; $BUDGET&gt;&gt;Your budget is currently $BUDGET, but your expenditures for this round are $ $BUDGETTEMP. Please revise your [[decisions|Reset]] to stay within budget.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == true or $SEAWALLTEMP2 == true or $BEACHNOURISHTEMP == true or $SALTMARSHTEMP == true or $RETREATTEMP1 == true or $RETREATTEMP2 == true)&gt;&gt;Undertaking these projects takes time, and you don&#39;t have enough for both public consultation and constructing adaptation measures in the same turn. Please revise your [[decisions|Reset]] to choose either consultation or adaptations.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == false or $SEAWALLTEMP2 == false or $BEACHNOURISHTEMP == false or $SALTMARSHTEMP == false or $RETREATTEMP1 == false or $RETREATTEMP2 == false)&gt;&gt;&lt;&lt;goto Consultation&gt;&gt;&lt;&lt;elseif $RETREATTEMP1 == true and ($CARLOS_CONSULT == false or $CHAD_CONSULT == false)&gt;&gt;&lt;&lt;goto NoBizMove&gt;&gt;&lt;&lt;elseif $RETREATTEMP2 == true and ($AGATHA_CONSULT == false or $TIM_CONSULT == false or $CORA_CONSULT == false)&gt;&gt;&lt;&lt;goto NoResMove&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;goto CheckConditions&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="45" name="Reset" tags="Done" position="775,500" size="100,100">&lt;&lt;set $BUDGETTEMP = 0&gt;&gt;
 &lt;&lt;set $SEAWALLTEMP1 to false&gt;&gt;
 &lt;&lt;set $SEAWALLTEMP2 to false&gt;&gt; 
 &lt;&lt;set $SALTMARSHTEMP to false&gt;&gt;
@@ -1413,7 +1434,7 @@ Chad is a property developer who owns property in Waterville and is also activel
 &lt;&lt;set $EDUWORKSHOPTEMP to false&gt;&gt;
 &lt;&lt;set $ACTIONLIST to []&gt;&gt;
 &lt;&lt;goto Decisions&gt;&gt;
-</tw-passagedata><tw-passagedata pid="47" name="Repair/Maintain Seawalls" tags="Done-for-now" position="1025,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Repair and Maintenance&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="46" name="Repair/Maintain Seawalls" tags="Done-for-now" position="1025,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Repair and Maintenance&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/SEAWALL.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Sea wall |
 |&amp;emsp;| | |
@@ -1450,7 +1471,7 @@ Chad is a property developer who owns property in Waterville and is also activel
 %/
 
 
-</tw-passagedata><tw-passagedata pid="48" name="Salt Marsh Restoration" tags="Done-for-now" position="1025,475" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Salt Marsh Restoration&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="47" name="Salt Marsh Restoration" tags="Done-for-now" position="1025,475" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Salt Marsh Restoration&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/SaltMarsh.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Salt marsh restoration is the restoring of the coastal wetland area that help form the transition zone between the land and the ocean. 
 |&amp;emsp;| | |
@@ -1480,7 +1501,7 @@ Complains about sand blowing through town during storms
 
 Round prior to failure sand dune are showing signs of failure and the beach is higher than the park  storms stating to overtop the beach and damage the park
 */
-</tw-passagedata><tw-passagedata pid="49" name="Install high seawall" tags="Done-for-now" position="1025,350" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="48" name="Install high seawall" tags="Done-for-now" position="1025,350" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/SEAWALL.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Sea wall|
 |&amp;emsp;| | |
@@ -1514,7 +1535,7 @@ Round prior to failure sand dune are showing signs of failure and the beach is h
 //
 //Need some warning signs of failure – say during the last storm locals //noted the water level was getting very close to the top of the sea //wall.
 %/
-</tw-passagedata><tw-passagedata pid="50" name="Relocate shorefront residential area" tags="Done-for-now" position="1150,350" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal community&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="49" name="Relocate shorefront residential area" tags="Done-for-now" position="1150,350" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal community&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/MR.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Relocation of coastal community|
@@ -1530,11 +1551,11 @@ The City of Waterville has acquired inland and higher land, farther from the coa
 |&amp;emsp;| | |
 |&#39;&#39;Cost&#39;&#39;|&amp;emsp;|$RETREATCOST2 k|
 Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1820344
-</tw-passagedata><tw-passagedata pid="51" name="Consult with the public" tags="Done-for-now" position="1150,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about consulting with the public&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="50" name="Consult with the public" tags="Done-for-now" position="1150,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about consulting with the public&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/PublicConsult.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Hold public meetings/educational workshops with stakeholders and community members.|
 |&amp;emsp;| | |
-|&#39;&#39;Details&#39;&#39;|&amp;emsp;|This option allows you to share information about likely local climate change effects and adaptation options and to get input from community members on these potential options. This also provides the opportunity for the committee to provide educational presentations and workshops to help bolster community understanding of local climate change impacts. By consulting with the public, tthe committee is also eligible for a state grant of $60k. This will be added to your budget for the next ten years.|
+|&#39;&#39;Details&#39;&#39;|&amp;emsp;|This option allows you to share information about likely local climate change effects and adaptation options and to get input from community members on these potential options. This also provides the opportunity for the committee to provide educational presentations and workshops to help bolster community understanding of local climate change impacts.|
 |&amp;emsp;| | |
 |&#39;&#39;Advantages&#39;&#39;|&amp;emsp;|This can provide insights into better ways of implementing adaptations and build trust within your community. It can also help community knowledge surrounding climate change and the seriousness of the impacts that are likely to be seen in the future. Consulting the public also opens up state and federal grant opportunities.|
 |&amp;emsp;| | |
@@ -1545,11 +1566,9 @@ Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/
 |Cost|&amp;emsp;|$PUBLICCONSULTCOST k|
 
 
-</tw-passagedata><tw-passagedata pid="52" name="CheckConditions" tags="Done-for-now" position="500,475" size="100,100">/*This &#39;check&#39; passage determines the number of severe weather events during the intervening ten years between turns. This is done by comparing random probability draws between 0 and 99 for each year against a changing probability of storm occurrence (STORMPROB). If the random value is less than that probability, then a severe weather event occurs, increasing the count (SEVEREWEATHER) for that turn.*/&lt;&lt;set  $SEVEREWEATHER = 0&gt;&gt;
-&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;
-
-&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&lt;&lt;if $NZRCP == 1&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP1[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 2&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP2[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 3&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP3[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;div id=fadeelement&gt;[[See how this has affected your waterfront...|UpdateOutcomes]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="UpdateOutcomes" tags="Done-for-now" position="325,625" size="100,100">/*CHECK ZONES*/
+</tw-passagedata><tw-passagedata pid="51" name="CheckConditions" tags="Done-for-now" position="500,475" size="100,100">/*This &#39;check&#39; passage determines the number of severe weather events during the intervening five years between turns. This is done by comparing random probability draws between 0 and 99 for each year against a changing probability of storm occurrence (STORMPROB). If the random value is less than that probability, then a severe weather event occurs, increasing the count (SEVEREWEATHER) for that turn.*/&lt;&lt;set  $SEVEREWEATHER = 0&gt;&gt;
+&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 1&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP1[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 2&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP2[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 3&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP3[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;div id=fadeelement&gt;[[See how this has affected your waterfront...|UpdateOutcomes]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="UpdateOutcomes" tags="Done-for-now" position="325,625" size="100,100">/*CHECK ZONES*/
 &lt;&lt;if $SEALEVEL &lt; 0.1&gt;&gt;
 	&lt;&lt;set $ZONE1CONDITION = 1&gt;&gt;
     &lt;&lt;set $MAP = 0&gt;&gt;
@@ -1646,7 +1665,7 @@ Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/
 
 
 
-&lt;&lt;goto UpdateAdaptations&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="Do Nothing" tags="Done-for-now" position="1150,475" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Doing Nothing&lt;/span&gt;
+&lt;&lt;goto UpdateAdaptations&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Do Nothing" tags="Done-for-now" position="1150,475" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Doing Nothing&lt;/span&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Do nothing (take no adaptation action)|
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;| |This option allows nature to dictate what happens and leaves individuals and businesses to make their own decisions on how to respond to sea level rise and storm events. Doing nothing can be a part of a longer term strategy ……..or not.|
@@ -1658,9 +1677,9 @@ Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/
 |Limits| |The option of doing nothing has no limit|
 |&amp;emsp;| | |
 |Cost| |$0|
-</tw-passagedata><tw-passagedata pid="55" name="Decisions" tags="Done" position="600,300" size="100,100">&lt;span class=&quot;h1&quot;&gt;Decisions&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="54" name="Decisions" tags="Done" position="600,300" size="100,100">&lt;span class=&quot;h1&quot;&gt;Decisions&lt;/span&gt;
 
-Over the &lt;u&gt;next ten years&lt;/u&gt;, which of these strategies (&lt;&lt;link &quot;if any&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Do Nothing&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;) will you employ to address the concerns of the community?
+Over the &lt;u&gt;next five years&lt;/u&gt;, which of these strategies (&lt;&lt;link &quot;if any&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Do Nothing&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;) will you employ to address the concerns of the community?
 
 &lt;&lt;if ($SEALEVEL &gt; $SALTMARSHLIMIT)&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;&lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;Salt Marsh Restoration&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Salt Marsh Restoration&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; not effective&lt;/span&gt;&lt;&lt;elseif $BUDGET &gt;= $SALTMARSHCOST&gt;&gt;&lt;&lt;checkbox &quot;$SALTMARSHTEMP&quot; false true&gt;&gt; &lt;&lt;link &quot;Salt Marsh Restoration&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Salt Marsh Restoration&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; for $$$SALTMARSHCOST k&lt;&lt;elseif $BUDGET &lt; $SALTMARSHCOST&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cannot afford to &lt;span  class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;restore salt marsh&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Salt Marsh Restoration&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;  for $$$SALTMARSHCOST k&lt;/span&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if ($SEALEVEL &gt; $BEACHNOURISHLIMIT) or ($SEAWALL2 == true)&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;&lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;Beach Renourishment&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Beach Renourishment&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; not effective&lt;/span&gt;&lt;&lt;elseif $BEACHNOURISH == true&gt;&gt;&lt;span class=&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;Beach renourished&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Beach Renourishment&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; &lt;/span&gt;&lt;&lt;elseif $BUDGET &gt;= $BEACHNOURISHCOST&gt;&gt;&lt;&lt;checkbox &quot;$BEACHNOURISHTEMP&quot; false true&gt;&gt; &lt;&lt;link &quot;Beach Renourishment&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Beach Renourishment&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; for $$$BEACHNOURISHCOST k&lt;&lt;elseif $BUDGET &lt; $BEACHNOURISHCOST&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cannot afford to &lt;span  class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;renourish beach&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Beach Renourishment&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;  for $$$BEACHNOURISHCOST k&lt;/span&gt;&lt;&lt;endif&gt;&gt;
@@ -1669,37 +1688,34 @@ Over the &lt;u&gt;next ten years&lt;/u&gt;, which of these strategies (&lt;&lt;l
 &lt;&lt;if $SEALEVEL &gt; $RETREAT1LIMIT&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cannot &lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;relocate shorefront commercial area and homes&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Relocate shorefront commercial area&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;elseif $RETREAT1 == true&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Shorefront commercial area and homes &lt;span  class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;relocated&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Relocate shorefront commercial area&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;elseif $BUDGET &gt;= $RETREATCOST1&gt;&gt;&lt;&lt;checkbox &quot;$RETREATTEMP1&quot; false true&gt;&gt;&lt;&lt;link &quot;Relocate shorefront commercial area&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Relocate shorefront commercial area&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; for $$$RETREATCOST1 k&lt;&lt;elseif $BUDGET &lt; $RETREATCOST1&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cannot afford to &lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;relocate shorefront commercial area&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Relocate shorefront commercial area&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; for $$$RETREATCOST1 k&lt;/span&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $SEALEVEL &gt; $RETREAT2LIMIT&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cannot &lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;relocate coastal residential area &quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Relocate coastal residential area&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;elseif $RETREAT2 == true&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Coastal residental area &lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;relocated&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Relocate coastal residential area&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;&lt;elseif $BUDGET &gt;= $RETREATCOST2&gt;&gt;&lt;&lt;checkbox &quot;$RETREATTEMP2&quot; false true&gt;&gt;&lt;&lt;link &quot;Relocate coastal residential area&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Relocate coastal residential area&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; for $$$RETREATCOST2 k&lt;&lt;elseif $BUDGET &lt; $RETREATCOST2&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cannot afford to &lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;relocate shoreront residential area&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Relocate shorefront residential area&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; for $$$RETREATCOST2 k&lt;/span&gt;&lt;&lt;endif&gt;&gt;
 
-Or you can
-&lt;&lt;if $BUDGET &gt;= $PUBLICCONSULTCOST&gt;&gt;&lt;&lt;checkbox &quot;$PUBLICCONSULTTEMP&quot; false true&gt;&gt; &lt;&lt;link &quot;Consult with the public&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Consult with the public&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; for $$$PUBLICCONSULTCOST k&lt;&lt;elseif $BUDGET &lt; $PUBLICCONSULTCOST&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Cannot afford to &lt;span class =&quot;inactiveLink&quot;&gt;&lt;&lt;link &quot;consult with the public&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;Consult with the public&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/span&gt; for $$$PUBLICCONSULTCOST k&lt;/span&gt;&lt;&lt;endif&gt;&gt;
 
 
 
 
-
-[[Back to status page|Turn]] or [[see what happens in the next 10 years...|Precheck]]
-</tw-passagedata><tw-passagedata pid="56" name="End" tags="Done" position="375,375" size="100,100"> &lt;span class=&quot;h1&quot;&gt;Thank you for playing!&lt;/span&gt; 
+[[Back to status page|Turn]] or [[see what happens in the next 5 years...|Precheck]]
+</tw-passagedata><tw-passagedata pid="55" name="End" tags="Done" position="375,375" size="100,100"> &lt;span class=&quot;h1&quot;&gt;Thank you for playing!&lt;/span&gt; 
   Please [[click here take our short post-game survey| https://tufts.qualtrics.com/jfe/form/SV_38bHx3FTUE32VIG]] about your experience or &lt;&lt;click &quot;click here to play again&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.restart()&lt;&lt;/script&gt;&gt;&lt;&lt;/click&gt;&gt;. 
 &lt;&lt;set $TURNOUTCOME.push($BUDGET)&gt;&gt;
 &lt;&lt;set $TURNOUTCOME.push($BUDGETTEMP)&gt;&gt;&lt;&lt;set $TURNOUTCOME.push($SCORE)&gt;&gt;
 &#39;&#39;Play Summary&#39;&#39;
 |YEAR|BUDGET ($$k)|EXPENDITURES ($$k)|SCORE|
 |2019|$TURNOUTCOME[0]|$TURNOUTCOME[1]|&lt;&lt;print Math.round(($TURNOUTCOME[2]/18)*100)&gt;&gt;%|
-|&lt;&lt;if $YEAR &gt;= 2029&gt;&gt;2029&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2029&gt;&gt;$TURNOUTCOME[3]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2029&gt;&gt;$TURNOUTCOME[4]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2029&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[5]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;2039&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;$TURNOUTCOME[6]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;$TURNOUTCOME[7]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[8]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-|&lt;&lt;if $YEAR &gt;= 2049&gt;&gt;2049&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2049&gt;&gt;$TURNOUTCOME[9]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2049&gt;&gt;$TURNOUTCOME[10]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2049&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[11]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;2059&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;$TURNOUTCOME[12]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;$TURNOUTCOME[13]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[14]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-|&lt;&lt;if $YEAR &gt;= 2069&gt;&gt;2069&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2069&gt;&gt;$TURNOUTCOME[15]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2069&gt;&gt;$TURNOUTCOME[16]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2069&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[17]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-|&lt;&lt;if $YEAR &gt;= 2079&gt;&gt;2079&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2079&gt;&gt;$TURNOUTCOME[18]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2079&gt;&gt;$TURNOUTCOME[19]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2079&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[20]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-|&lt;&lt;if $YEAR &gt;= 2089&gt;&gt;2089&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2089&gt;&gt;$TURNOUTCOME[21]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2089&gt;&gt;$TURNOUTCOME[22]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2089&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[23]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-|&lt;&lt;if $YEAR &gt;= 2099&gt;&gt;2099&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2099&gt;&gt;$TURNOUTCOME[24]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2099&gt;&gt;$TURNOUTCOME[25]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2099&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[26]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
-|&lt;&lt;if $YEAR &gt;= 2109&gt;&gt;2109&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2109&gt;&gt;$TURNOUTCOME[27]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2109&gt;&gt;$TURNOUTCOME[28]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2109&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[29]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;
-</tw-passagedata><tw-passagedata pid="57" name="VotedOut" tags="Done" position="425,200" size="100,100">The residents of Waterville are fed up with the management of the committee. They have voted in a referendum to replace you. [[You&#39;ve reached the end of the game.|End]]
+|&lt;&lt;if $YEAR &gt;= 2027&gt;&gt;2027&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2027&gt;&gt;$TURNOUTCOME[3]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2027&gt;&gt;$TURNOUTCOME[4]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2027&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[5]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2031&gt;&gt;2031&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2031&gt;&gt;$TURNOUTCOME[6]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2031&gt;&gt;$TURNOUTCOME[7]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2031&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[8]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2035&gt;&gt;2035&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2035&gt;&gt;$TURNOUTCOME[9]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2035&gt;&gt;$TURNOUTCOME[10]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2035&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[11]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;2039&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;$TURNOUTCOME[12]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;$TURNOUTCOME[13]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[14]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2043&gt;&gt;2043&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2043&gt;&gt;$TURNOUTCOME[15]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2043&gt;&gt;$TURNOUTCOME[16]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2043&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[17]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2047&gt;&gt;2047&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2047&gt;&gt;$TURNOUTCOME[18]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2047&gt;&gt;$TURNOUTCOME[19]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2047&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[20]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2051&gt;&gt;2051&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2051&gt;&gt;$TURNOUTCOME[21]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2051&gt;&gt;$TURNOUTCOME[22]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2051&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[23]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2055&gt;&gt;2055&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2055&gt;&gt;$TURNOUTCOME[24]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2055&gt;&gt;$TURNOUTCOME[25]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2055&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[26]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;2059&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;$TURNOUTCOME[27]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;$TURNOUTCOME[28]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[29]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;
+</tw-passagedata><tw-passagedata pid="56" name="VotedOut" tags="Done" position="425,200" size="100,100">The residents of Waterville are fed up with the management of the committee. They have voted in a referendum to replace you. [[You&#39;ve reached the end of the game.|End]]
 
 &lt;div style=&quot;position:relative;width:267px;height:25px;overflow=hidden;&quot;&gt;
 	&lt;div style=&quot;position:absolute;top:-267px;left:-5px&quot;&gt;
 		&lt;iframe width=&quot;100&quot; height=&quot;100&quot; src=&quot;https://www.youtube.com/embed/yJxCdh1Ps48?autoplay=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 	&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="UpdateAdaptations" tags="Done-for-now" position="1025,800" size="100,100">/*CHECK THIS: IF SHORT SEAWALL IS ALREADY INSTALLED, HIGH SEAWALL LESS EXPENSIVE??*/
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="UpdateAdaptations" tags="Done-for-now" position="1025,800" size="100,100">/*CHECK THIS: IF SHORT SEAWALL IS ALREADY INSTALLED, HIGH SEAWALL LESS EXPENSIVE??*/
 
 /*CHECK FINANCES*/
 &lt;&lt;set $TURNOUTCOME.push($BUDGET)&gt;&gt;
@@ -1853,7 +1869,7 @@ Or you can
 	&lt;&lt;set $MAP = 12&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 
-&lt;&lt;goto UpdateNPCStatus&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="UpdateNPCStatus" tags="Done-for-now" position="1175,800" size="100,100">&lt;&lt;set $TURNOUTCOME.push($SCORE)&gt;&gt;
+&lt;&lt;goto UpdateNPCStatus&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="UpdateNPCStatus" tags="Done-for-now" position="1175,800" size="100,100">&lt;&lt;set $TURNOUTCOME.push($SCORE)&gt;&gt;
 /*------------------------------------------------------*/
 /*------------------------------------------------------*/
 /*Determine CORA&#39;s response set*/
@@ -2494,7 +2510,7 @@ Or you can
 
 &lt;&lt;set $TURN += 1&gt;&gt;&lt;&lt;set $STORMPROB += 3&gt;&gt;&lt;&lt;set $SCORE = ($CORA_SCORE + $AGATHA_SCORE + $CHAD_SCORE + $CARLOS_SCORE + $TIM_SCORE + $HANNAH_SCORE)&gt;&gt;&lt;&lt;if $TURN &gt; 1&gt;&gt;&lt;&lt;set $BUDGET += ($CORA_CONT + $AGATHA_CONT + $CHAD_CONT + $CARLOS_CONT + $TIM_CONT + $HANNAH_CONT)&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;goto Turn&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="60" name="Carlos" tags="Done" position="1375,450" size="100,100">&lt;span class=&quot;h1&quot;&gt;Carlos the Local Restaurant Owner&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="59" name="Carlos" tags="Done" position="1375,450" size="100,100">&lt;span class=&quot;h1&quot;&gt;Carlos the Local Restaurant Owner&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CARLOS3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
 
 Carlos says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $CARLOS_LVL == 1&gt;&gt;$CARLOS_LVL1[$CARLOS_SCORE]&lt;&lt;elseif $CARLOS_LVL == 2&gt;&gt;$CARLOS_LVL2[$CARLOS_SCORE]&lt;&lt;elseif $CARLOS_LVL == 3&gt;&gt;$CARLOS_LVL3[$CARLOS_SCORE]&lt;&lt;elseif $CARLOS_LVL == 4&gt;&gt;$CARLOS_LVL4[$CARLOS_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -2524,7 +2540,7 @@ Deliver score-based content
 */
 
 &lt;&lt;set $CONSULT.CARLOS to $CARLOSWANTS&gt;&gt;
-</tw-passagedata><tw-passagedata pid="61" name="Tim" tags="Done" position="1375,575" size="100,100">&lt;span class=&quot;h1&quot;&gt;Tim the Coastal Adaptation Engineer&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="60" name="Tim" tags="Done" position="1375,575" size="100,100">&lt;span class=&quot;h1&quot;&gt;Tim the Coastal Adaptation Engineer&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/TIM3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
 
 Tim says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $TIM_LVL == 1&gt;&gt;$TIM_LVL1[$TIM_SCORE]&lt;&lt;elseif $TIM_LVL == 
@@ -2553,7 +2569,7 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.TIM to $TIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Hannah" tags="Done" position="1375,700" size="100,100">&lt;span class=&quot;h1&quot;&gt;Hannah the Student Activist&lt;/span&gt;
+&lt;&lt;set $CONSULT.TIM to $TIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="Hannah" tags="Done" position="1375,700" size="100,100">&lt;span class=&quot;h1&quot;&gt;Hannah the Student Activist&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/HANNAH3.0.png style=&quot;width:300px;height:300px;&quot;&gt;
 
 Hannah says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $HANNAH_LVL == 1&gt;&gt;$HANNAH_LVL1[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 2&gt;&gt;$HANNAH_LVL2[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 3&gt;&gt;$HANNAH_LVL3[$HANNAH_SCORE]&lt;&lt;elseif $HANNAH_LVL == 4&gt;&gt;$HANNAH_LVL4[$HANNAH_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -2581,38 +2597,38 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.HANNAH to $HANNAHWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Cora says" tags="Done" position="200,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;&lt;set $CONSULT.HANNAH to $HANNAHWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Cora says" tags="Done" position="200,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CORA2.0.png]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $CORA_LVL == 1&gt;&gt;&quot;We have to be taking storm surges and sea level rise seriously. We should be committing ourselves to nature based solutions that help protect the ecosystem and also protect our human infrastructure. Salt marsh restoration is the best first step.&quot;&lt;&lt;elseif $CORA_LVL == 2&gt;&gt;&quot;The salt marsh is our first defense to the rising sea. Allowing it the proper space to thrive and move as needed should be our priority. Building more walls is only hurting our coastal ecosystem.&quot;&lt;&lt;else&gt;&gt;&quot;We have let the coast line disappear and the salt marsh has vanished. We have to consider retreating now- it is the only option to keep Waterville thriving.&quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="Agatha says" tags="Done" position="325,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="63" name="Agatha says" tags="Done" position="325,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/AGATHA2.0.png]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $AGATHA_LVL == 1&gt;&gt;&quot;The storm surges are getting worse, and we need to make sure to have the proper seawalls in place. The ones in front of my home still need repair. We should invest in maintaining what we have and ensuring the homes are not threatened by flooding.&quot;&lt;&lt;elseif $AGATHA_LVL == 2&gt;&gt;&quot;We need to think seriously about building the seawalls higher. The ones that are here just get overtopped, and flooding along the road is impacting homes and people’s livelihoods. &quot;&lt;&lt;else&gt;&gt;&quot;Why have we not taken action and built up the shoreline protection?! We’ve had years of waiting and now everyone just wants to move away from the coast. That is not a solution!&quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="Chad says" tags="Done" position="450,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="Chad says" tags="Done" position="450,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CHAD2.0.png]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $CHAD_LVL == 1&gt;&gt;&quot; The shorefront is one of Waterville’s best features, and brings in so much economic value to the city. We can continue to develop new housing and also protect our investments through seawall technology.&quot;&lt;&lt;elseif $CHAD_LVL == 2&gt;&gt;&quot;We have the technology to build seawalls and protect our community. There is no need to think about other adaptation strategies at the moment.&quot;&lt;&lt;else&gt;&gt;&quot;Not building up our seawalls was a big mistake. Every storm the shorefront gets flooded as water overtops onto the road and further. &quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="Carlos says" tags="Done" position="575,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="Carlos says" tags="Done" position="575,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/CARLOS2.0.png]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $CARLOS_LVL == 1&gt;&gt;&quot;We should be doing everything we can to protect the shorefront commercial areas. My restaurant will need better protection from storm surges and we should focus on repairing the existing seawall in front of the road.&quot;&lt;&lt;elseif $CARLOS_LVL == 2&gt;&gt;&quot;The seawall continues to get overtopped every year with storm surges. We have to think seriously about building it higher now, otherwise my restaurant will continue to get flooded.&quot;&lt;&lt;else&gt;&gt;&quot;We’ve let this happen and now I don’t know what next to do. My restaurant is flooding because of storm surges way more often and I can not run my business like this.
 &quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="67" name="Tim says" tags="Done" position="700,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="Tim says" tags="Done" position="700,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/TIM2.0.png]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $TIM_LVL == 1&gt;&gt;&quot;We should focus on restoring the salt marsh and helping create a natural barrier along the coast. Repairing the seawall will also help, but we should continue to focus on the nature-based solutions while we can.&quot;&lt;&lt;elseif $TIM_LVL == 2&gt;&gt;&quot;Unfortunately we have let the salt marsh recede and we must look to repair the seawall in order to protect the road from the wave overtopping. It would have been better to not let the salt marsh degrade, but we did.&quot;&lt;&lt;elseif $TIM_LVL == 3&gt;&gt;&quot;This is our town and we need to protect it for our children and grandchildren – that may mean that we have to build up and build stronger, but I believe we are up to the challenge.&quot;&lt;&lt;else&gt;&gt;&quot;The storm surges are being too severe. Waterville is going to have to make some decisions and decide what direction they want to go in. There is no more time to wait and decisions must be made.&quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="Hannah says" tags="Done" position="825,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="67" name="Hannah says" tags="Done" position="825,800" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left2&quot;&gt; [img[https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/HANNAH2.0.png]]
   &lt;/div&gt;
 &lt;div id=&quot;right2&quot;&gt;&lt;&lt;if $HANNAH_LVL == 1&gt;&gt;&quot;I think that we have to seriously start considering the future. The adults at this meeting are not taking action in the way we must in order to meet the challenges of climate change.&quot;&lt;&lt;elseif $HANNAH_LVL == 2&gt;&gt;&quot;Waterville is getting hit by a number of severe storms and flooding and storm surges are a massive problem. I don’t understand why we continue to focus on seawalls. Let’s work to restore the salt marsh and have it migrate inland.&quot;&lt;&lt;elseif $HANNAH_LVL == 3&gt;&gt;&quot;I understand it might be hard, but we no longer have the ability to live on the coast. The adults at this meeting have to think about future generations and the impact this has on them. The fact we haven’t done anything yet is ridiculous.&quot;&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="69" name="Beach Renourishment" tags="Done-for-now" position="1150,600" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Beach Nourishment&lt;/span&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="Beach Renourishment" tags="Done-for-now" position="1150,600" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Beach Nourishment&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/Beach.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Beach re-nourishment is simply adding sand to the beach to replace that which was lost through erosion.|
 |&amp;emsp;| | |
@@ -2641,18 +2657,18 @@ Opposition from the communities where sand is extracted – they believe its aff
 Complains about sand blowing through town during storms
 
 Round prior to failure sand dune are showing signs of failure and the beach is higher than the park  storms stating to overtop the beach and damage the park
-*/</tw-passagedata><tw-passagedata pid="70" name="NoBizMove" tags="" position="1075,925" size="100,100">You have not consulted sufficiently with the local business community. You still need to consult with:
+*/</tw-passagedata><tw-passagedata pid="69" name="NoBizMove" tags="" position="1075,925" size="100,100">You have not consulted sufficiently with the local business community. You still need to consult with:
 
 &lt;&lt;if $CORA_CONSULT == false&gt;&gt;Cora the Community Land Trust Activist&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $CHAD_CONSULT == false&gt;&gt;Chad the Developer &lt;&lt;endif&gt;&gt;
 
-Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="71" name="NoResMove" tags="" position="1200,925" size="100,100">You have not consulted sufficiently with the local residential community. You still need to consult with:
+Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="70" name="NoResMove" tags="" position="1200,925" size="100,100">You have not consulted sufficiently with the local residential community. You still need to consult with:
 
 &lt;&lt;if $AGATHA_CONSULT == false&gt;&gt;Agatha the Resident&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $TIM_CONSULT == false&gt;&gt;Tim the Coastal Adaptation Engineer&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $CARLOS_CONSULT == false&gt;&gt;Carlos the Local Restaurant Owner&lt;&lt;endif&gt;&gt;
 
-Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="72" name="Relocate shorefront commercial area" tags="Done-for-now" position="1025,600" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal residents&lt;/span&gt;
+Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="71" name="Relocate shorefront commercial area" tags="Done-for-now" position="1025,600" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal residents&lt;/span&gt;
 &lt;img src=https://raw.githubusercontent.com/rvresilovic/rvresilovic.github.io/main/images/MR.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Relocation of coastal residents|
